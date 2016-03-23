@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+	<title>投票</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/vote.css">
+	<link rel="stylesheet" href="../css/swiper-3.2.7.min.css">
+</head>
+<body>
+	<div class="warp">
+		<div class="v-header">
+			<a href = "javascript:history.go(-1)" class="v-header-arrow">
+				<span class="glyphicon glyphicon-arrow-left"></span>
+			</a>	
+			<div class="v-header-title">
+				<span>第一轮(10票)</span>
+				<span class="glyphicon glyphicon-chevron-down v-header-down"></span>
+			</div>
+			<div class="v-pop">
+				<ul>
+					<li>第1轮(10票)</li>
+					<hr>
+					<li>第2轮(10票)</li>
+					<hr>
+					<li>第3轮(10票)</li>
+				</ul>
+			</div>
+			<a href="##" class="glyphicon glyphicon-question-sign v-header-question" data-toggle="modal" data-target="#v-question-pop"></a>
+		</div>
+		<div class="modal fade" id="v-question-pop">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		        	<div class="modal-header">
+		          		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		          		<h4 class="modal-title">规则说明</h4>
+		        	</div>
+		      		<div class="modal-body">
+		        		<span style="font-size: 1.4rem;font-weight: 600;">参赛选手：</span><br>
+		        		1.平台根据已注册女生的注册时间划分轮次，每新增100名注册女生，则划分为一轮<br>
+		        		2.主页面轮播内容用户可通过  我的—日志—添加日志  进行添加，日志内容要求为参赛选手自拍照，能够展示才艺更容易获得粉丝认可<br>
+		        		3.凡是获得投票数超过999（在 我的 明星颜值 处查看自己的所得票数）的女生用户，即可成为我方平台的B 级女神，将有资格参加我方平台提供的各种车模、主持人等实习活动以及平台内部培训，并获得对应的报酬奖励，同时均可参加我方平台负责的的A级女神面试环节，我们将为其拍摄写真、现场才艺展示MV录制，一旦面试通过（需签署粉丝回馈合约：每年艺人收益4%回馈粉丝，1%回馈平台），将成为专业经纪公司的签约艺人，与明星一样，每月享有固定工资，接受专业化的明星培训，且不会影响正常学习。<br>
+		        		4.凡成为我方平台A级女神的选手，将可加入CoD艺人俱乐部，每年将可参加我方平台主办的各种联谊活动，资源共享，共同发展。<br>
+		        		<span style="font-size: 1.4rem;font-weight: 600;">投票粉丝：</span><br>
+		        		1.每轮投票周期，享有10次投票机会，即只能进行100选10投票<br>
+		        		2.一旦在自己的所投选手中有选手通过了A级女神面试，成为了一名娱乐圈明星艺人，且自己为其前999名投票粉丝，则可参与该选手每年从事艺人工作所得收益的4%现金粉丝红包回馈计划，以三线明星为例，其每年收益至少超过100万元，则每年每位粉丝平均可获40元收益，运气王可获1万元收益奖励，自己投中多少A级女神，即可享受多少女神的红包回馈，上不封顶。<br>
+		        		3.粉丝想要收益更多，就需要多支持自己所投女神的宣传活动，帮助其扩大公众影响力，该女神公众影响力越高，收益越大，支持力度越高，在红包回馈中运气越好<br>
+
+		      		</div>
+		    	</div>
+		  </div>
+		</div>
+		<div class="v-content">
+			<div class="v-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide swiper-no-swiping">
+						<img src="../img/bg1.png" alt="">
+					</div>
+					<div class="swiper-slide swiper-no-swiping">
+						<img src="../img/bg3.png" alt="">
+					</div>
+					<div class="swiper-slide swiper-no-swiping">
+						<img src="../img/bg3.png" alt="">
+					</div>
+			 	</div>
+			</div>
+			<div class="v-note">
+				<h3>海阳</h3>
+				<p>这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
+			</div>
+		</div>
+		<!-- ajax更新信息 -->
+		<span class="glyphicon glyphicon-menu-left v-left"></span>
+		<span class="glyphicon glyphicon-menu-right v-right"></span>
+		<div class="v-footer">
+			<ul>
+				<li class="v-footer-tab">
+					<span>加QQ</span>
+				</li>
+				<li class="v-footer-tab">
+					<label class="glyphicon glyphicon-heart" id="heart" for="heart-check"></label>
+					<input type="checkbox" id="heart-check">
+				</li>
+				<li class="v-footer-tab">
+					<span>投票历史</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="../js/jQuery.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/swiper-3.2.7.jquery.min.js"></script>
+	<script src="../js/vote.js"></script>
+</body>
+</html>

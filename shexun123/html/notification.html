@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>接受社团通知</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/notification.css">
+</head>
+<body>
+	
+	<div class="notiContainer">
+		<div class = "notiHeader">
+			<a href = "javascript:history.go(-1)" class = "left_arrow">
+			<span class="icon glyphicon glyphicon-arrow-left"></span>
+			</a>
+			<span class="notiInfo">通知详情</span>
+			<a class="notification-again">再次通知</a>
+		</div>
+		<!-- 原a标签移动 ↑ -->
+		<!-- <a class="notification-again">再次通知</a> -->
+		<div class="notiContent">
+			<h4>创业大赛通知</h4>
+			<span class="notiSubTitle">创业协会</span>
+			<span class="notiTime">1月24日/周五 12：12</span>
+			<p>今天晚上我们将会举办什么活动，今天晚上我们将会举办什么活动，今天晚上我们将会举办什么活动，今天晚上我们将会举办什么活动。</p>
+			<hr>
+			<div class="notiContentImg">
+				<img src="../img/bg1.png" alt="">
+				<img src="../img/bg1.png" alt="">
+				<img src="../img/bg1.png" alt="">
+				<img src="../img/bg1.png" alt="">
+				<span class="glyphicon glyphicon-chevron-right imgRight"></span>
+			</div>
+		</div>
+		<div class="notiPerson">
+			<span class="notiPersonTitle">共发送</span>
+			<span class="notiPersonNum">20人</span>
+			<hr>
+			<div class="notiPersonList">
+				<span class="notiPersonTitle">已收到</span>
+				<span class="notiPersonNum">10人/</span>
+				<span class="notiShow">展开</span>
+				<div class="notiPersonName">
+					<span class="notiPersonName1">蓝阳</span>
+					<span>蓝阳</span>
+					<span>卢睿韬</span>
+					<div class="notiNameHide" style="display:none;">
+						<span>蓝阳</span>
+						<span>卢睿韬</span>
+						<span>蓝阳</span>
+						<span>卢睿韬</span>
+					</div>			
+				</div>
+			</div>
+			<hr>
+			<div class="notiPersonList">
+				<span class="notiPersonTitle">未收到</span>
+				<span class="notiPersonNum">8人/</span>
+				<div class="notiPersonName">
+					<span class="notiPersonName1">蓝阳</span>
+					<span>蓝阳</span>
+					<span>卢睿韬</span>
+					<span>蓝阳</span>
+					<span>卢睿韬</span>
+					<span>蓝阳</span>
+					<span>卢睿韬</span>
+					<span>蓝阳</span>
+					<span>卢睿韬</span>				
+					<span>蓝阳</span>
+				</div>
+			</div>
+			<hr>
+			<div class="notiPersonList">
+				<span class="notiPersonTitle">请假</span>
+				<span class="notiPersonNum">2人/</span>
+				<div class="notiPersonLeave">
+					<a href="#" data-toggle="modal" data-target="#leave-reason" class = "no_underline_black">
+						<label class="notiPersonName1">蓝阳</label>
+						<span class="glyphicon glyphicon-chevron-down"></span>
+					</a>
+					<a href="#" data-toggle="modal" data-target="#leave-reason" class = "no_underline_black">
+						<label>蓝阳</label>
+						<span class="glyphicon glyphicon-chevron-down"></span>
+					</a>
+				</div>
+			</div>
+			<hr>
+		</div>
+	</div>
+	<div class="modal fade the_top2" id="leave-reason">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	        	<div class="modal-header bg">
+		            <button type="button" class="close" data-dismiss="modal">
+		                <span aria-hidden="true">&times;</span>
+		            </button>
+		            <h4 class="modal-title">叶良辰</h4>
+		        </div>
+		        <div class="modal-body">
+			        <p>社长，明天导员开会，我可能过不去了</p>
+			        <textarea cols="30" rows="5" class = "applyText">好的</textarea>
+			        <button class = "leaveButton">回复</button>
+		        </div>
+	        </div>
+	    </div>
+	</div>
+	<!-- 回复过的 -->
+	<!-- <div class="modal fade the_top2" id="leave-reason">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	        	<div class="modal-header bg">
+		            <button type="button" class="close" data-dismiss="modal">
+		                <span aria-hidden="true">&times;</span>
+		            </button>
+		            <h4 class="modal-title">叶良辰</h4>
+		        </div>
+		        <div class="modal-body">
+			        <p>社长，明天导员开会，我可能过不去了</p>
+			        <p class="modal-body-reply">
+			        	已回复: 好的。
+			        </p>
+		        </div>
+	        </div>
+	    </div>
+	</div> -->
+	<!-- 成功提示信息 -->
+	<div id="toast">
+	    <div class="mask_transparent"></div>
+		    <div class="the_toast">
+		        <span class="icon_toast"></span>
+		        <p class="toast_content">已发送</p>
+		    </div>
+		</div>
+	</div>
+	<!-- 底部导航栏 -->
+	<div class="footer navbar navbar-default navbar-fixed-bottom" id = "footer">
+		<ul class = "nav navbar-nav">
+			<li>
+				<img src="../img/trend.png">
+				<a href="trend.html">动态</a>
+			</li>
+			<li>
+				<img src="../img/notification_active.png">
+				<a href="history.html">通知</a>
+			</li>
+			<li>
+				<img src="../img/organization.png">
+				<a href="organization.html">社团</a>
+			</li>
+		</ul>
+	</div>
+
+	<script src="../js/jQuery.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script src = "../js/notification.js"></script>
+</body>
+</html>

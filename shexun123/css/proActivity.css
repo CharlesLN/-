@@ -1,0 +1,284 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+	font-size: 10px;
+}
+body{
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+	height: 100%;
+	background: #fff;
+}
+.proTip{
+	display: none;
+	position: fixed;
+	z-index: 99;
+	top: 220px;
+	left: 50%;
+	margin-left: -30%;
+	width: 60%;
+	height: 50px;
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 5px;
+	background: rgba(0, 0, 0, .7);
+}
+.proHeader{
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	height: 40px;
+	background: #5cb85c;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+.proHeader a{
+	font-size: 1.5rem;
+	color: #fff;
+	text-decoration: none;
+}
+.proHeaderArrow{
+	float: left;
+	margin: 10px 0 0 5%;
+}
+.proHeaderTitle{
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	margin-left: -3.6rem;
+	font-size: 1.8rem;
+	color: #fff;
+}
+.proHeaderView{
+	float: right;
+	margin: 8px 5% 0 0;
+	color: #fff;
+}
+.warp{
+	padding-top: 44px;
+	padding-bottom: 120px;
+}
+.proInfo>span{
+	display: block;
+	padding: 5px 5%;
+	margin-bottom: 10px;
+	width: 100%;
+	color: #999;
+	background: #eee;
+}
+.proInfo hr{
+	margin: 10px auto;
+	width: 90%;
+}
+.proInfo li{
+	position: relative;
+	height: 30px;
+	list-style: none;
+}
+.proInfo li span{
+	margin-left: 5%;
+	line-height: 30px;
+	color: #999;
+	font-size: 1.6rem;
+}
+.proInfo li input{
+	margin-left: 15px;
+	padding-right: 25px;
+	width: 75%;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+	font-size: 1.5rem;
+}
+.proInfo li i{
+	position: absolute;
+	top: 10px;
+	right: 5%;
+	font-size: 1.6rem;
+	color: #999;
+}
+.proInfoStart{
+	position: relative;
+}
+.proInfoStart ul{
+	display: none;
+	position: absolute;
+	z-index: 99;
+	top: 30px;
+	left: 20%;
+	padding: 0 10px;
+	width: 75%;
+	max-height: 160px;
+	overflow: auto;
+	background: rgba(0, 0 ,0 ,.7);
+	border-radius: 5px;
+	border: 1px solid #999;
+}
+.proInfoStart li{
+	height: 40px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	line-height: 40px;
+	list-style: none;
+}
+.proInfoStart li:not(:last-child){
+	border-bottom: 1px solid #fff;
+}
+.proInfoScale{
+	position: relative;
+}
+.proInfoScale ul{
+	display: none;
+	position: absolute;
+	z-index: 99;
+	top: 30px;
+	left: 20%;
+	padding: 0 10px;
+	width: 75%;
+	background: rgba(0, 0 ,0 ,.7);
+	border-radius: 5px;
+	border: 1px solid #999;
+}
+.proInfoScale li{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+}
+.proInfoScale li:nth-child(1){
+	border-bottom: 1px solid #fff;
+}
+#proInfoClassify{
+	position: relative;
+}
+#proInfoClassify ul{
+	display: none;
+	position: absolute;
+	z-index: 99;
+	top: 30px;
+	left: 20%;
+	padding: 0 10px;
+	width: 75%;
+	max-height: 160px;
+	overflow: auto;
+	background: rgba(0, 0 ,0 ,.7);
+	border-radius: 5px;
+	border: 1px solid #999;
+}
+#proInfoClassify li{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.4rem;
+	color: #fff;
+}
+#proInfoClassify li:not(:last-child){
+	border-bottom: 1px solid #fff;
+}
+.proDetails>span{
+	display: block;
+	padding: 5px 5%;
+	color: #999;
+	background: #eee;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.3) inset;
+}
+.proDetails textarea{
+	display: block;
+	width: 90%;
+	height: 100px;
+	margin: 20px auto;
+	padding: 10px;
+	overflow: auto;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	background: #eee;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.3) inset;
+}
+.proDetailsTip{
+	float: right;
+	margin-right: 5%;
+	color: #5cb85c;
+}
+.proDetails p{
+	display: none;
+	margin: 50px auto -30px;
+	width: 90%;
+	text-indent: 2em;
+}
+.proAddPic{
+	margin-top: 50px;
+}
+.proAddPic>span{
+	display: block;
+	padding: 5px 5%;
+	color: #999;
+	background: #eee;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.3) inset;
+}
+.proAddPic hr{
+	margin: 15px auto;
+	width: 90%;
+}
+.proUpload,.proOnline{
+	float: left;
+	margin-top: 15px;
+	width: 50%;
+	color: #999;
+	text-align: center;
+	font-size: 1.6rem;
+}
+.proUpload{
+	position: relative;
+	border-right: 1px solid #999;
+}
+.upload{
+	position: absolute;
+	top: -10px;
+	width: 100%;
+	height: 50px;
+	opacity: 0;
+}
+.proAddpicClear:after{
+	display: block;
+	height: 0;
+	content: ".";
+	clear: both;
+	visibility:hidden;
+}
+.proPic{
+	width: 90%;
+	margin: 0 auto;
+}
+.proPic:after{
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	content: ".";
+}
+.proPic img{
+	width: 100%;
+}
+.proPicDiv{
+	float: left;
+	position: relative;
+	margin: 0 1.5% 20px;
+	width: 30%;
+}
+.proPic span{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding:3px;
+	font-size: 1.6rem;
+	color: #fff;
+	background: rgba(0, 0, 0, .3);
+}

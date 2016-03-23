@@ -1,0 +1,256 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 10px;
+}
+body{
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+	background: #fff;
+}
+hr{
+	margin: 10px;
+}
+/*顶部导航*/
+.treHeader{
+	width: 100%;
+	display: block;
+	height: 50px;
+	background: #5CB85C;
+	position: fixed;
+	z-index: 999;
+}
+.treHeader li{
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	list-style: none;
+	width: 50%;
+}
+.treHeader a{
+	display: block;
+	height: 50px;
+	color: #c3c3c3;
+	text-decoration:none;
+}
+.treHeader_Left a{
+	color: #fff;
+	border-bottom: 2px solid #FFFF9D;
+}
+/*整体定位*/
+.treContainer{
+	position: relative;
+	padding-top: 60px;
+	padding-bottom: 70px;
+}
+/*顶部筛选条*/
+.treFilter{
+	width: 100%;
+	position: fixed;
+	top: 50px;
+	z-index: 999;
+	background: #fff;
+	display: block;
+	margin: 0 auto;
+	height: 3rem;
+	line-height: 3rem;
+/*	border-bottom: 1px solid #a3a3a3;*/
+}
+.treFilter li{
+	list-style: none;
+	color: #a4a4a4;
+}
+.treFilter a{
+	text-decoration: none;
+	color: #a3a3a3;
+}
+/*点击后效果*/
+/*.treFilter a{
+	text-decoration: none;
+	color: #a3a3a3;
+}*/
+.treTip{
+	float: left;
+	font-size: 1.5rem;
+}
+.treTab{
+	position: relative;
+	margin-top: -3px;
+	width: 32.4%;
+	text-align: center;	
+}
+/*下拉菜单选项高度设置*/
+.treTab a span{
+	height: 40px;
+	line-height: 40px;
+}
+.treTab label span{
+	height: 40px;
+	line-height: 40px;
+}
+/*分割线边距*/
+.dropdown-menu .divider{
+	height: 1px;
+	margin: 0;
+}
+.dropdown-menu li label:hover{
+	background: #fff;
+}
+/*下拉菜单*/
+/*学校*/
+.treDownMenu1{
+	/*筛选按钮的3倍大*/
+	width: 305%;
+	position: absolute;
+	top: 35px;
+	left: 2%;
+	max-height: 240px;
+	overflow:auto;
+}
+/*时间*/
+.treDownMenu2{
+	width: 305%;
+	position: absolute;
+	top: 35px;
+	left: -102%;
+}
+/*类型（多选）*/
+.treDownMenu3{
+	width: 305%;
+	position: absolute;
+	z-index: 991;
+	top: 35px;
+	left: -204%;
+	max-height: 240px;
+	overflow: auto;
+}
+/*下拉菜单微调*/
+#firstline{
+	padding-left: 5%;
+	color: #a3a3a3;
+	height: 40px;
+	line-height: 40px;
+}
+.treFilterButton{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	border: none;
+	width: 30%;
+	height: 30px;
+	line-height: 30px;
+	background: #5CB85C;
+	color: #fff;
+	border-radius: 5px;
+}
+#treCarousel{
+	margin-top: 20px;
+}
+/*轮播图图片设置*/
+#treCarouselPhoto{
+	width: 100%;
+	height: 180px;
+	overflow: hidden;
+}
+/*轮播图小圆点*/
+#treIndicators{
+	bottom: -15px;
+}
+#treIndicators li{
+	display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #a3a3a3;
+    border: none;
+    border-radius: 4px;
+}
+#treIndicators .active{
+	width: 4px;
+    height: 4px;
+    background-color: #fff;
+}
+/*轮播图底部文字*/
+#treCarouselCaption{
+	left: 0;
+	right: 0;
+	bottom: -10px;
+	padding:10px 5%;
+	font-size: 1.5rem;
+	text-align: left;
+	background: #000;
+	opacity: 0.5;
+	width: 100%;
+}
+/*内容主体部分*/
+/*总体定位*/
+.treMain{
+	position: relative;
+	width: 100%;
+}
+.treMainWarp{
+	position: relative;
+}
+.treMainWarp a{
+	text-decoration: none;
+}
+/*内容缩略图*/
+.treMainImg{
+	width: 80px;
+	height: 60px;
+	margin: 10px;
+}
+/*右侧内容*/
+.treMainContent{
+	width: 60%;
+	position: absolute;
+	top: 15px;
+	left: 110px;
+	line-height: 1;
+}
+/*内容标题*/
+.treMainTitle{
+	font-size: 1.4rem;
+	width: 60%;
+	color: #000;
+}
+.treMainTitle:visited{
+	color: #000;
+}
+/*内容信息*/
+.treMainInfo{
+	position: absolute;
+	left: 110px;
+	top: 70px;
+	font-size: 1.2rem;
+}
+/*社团名称*/
+.treMainInfoName{
+	position: absolute;
+	left: 110px;
+	top: 52px;
+	font-size: 1rem;
+	color: #76C3A3;
+}
+.treMainInfoName:visited{
+	color: #76C3A3;
+}
+/*发布时间*/
+.treMainInfoTime{
+	position: absolute;
+	font-size: 1rem;
+	right: 14%;
+	top: 52px;
+	color: #a3a3a3;
+}
+/*访问人数*/
+.treMainInfoNum{
+	position: absolute;
+	font-size: 1rem;
+	right: 3%;
+	top: 52px;
+	color: #a3a3a3;
+}

@@ -1,0 +1,362 @@
+@charset "utf-8";
+
+*{
+	padding: 0;
+	margin: 0;
+}
+html{
+	height: 100%;
+}
+body {
+	height: 100%;
+	background-color: #f5f5f5;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+}
+
+hr {
+	height: .1px;
+	padding: 0;
+	margin: 0;
+}
+li {
+	list-style-type: none;
+}
+.time{
+	position: absolute;
+	left: 35%;
+	width: 50px;
+}
+.container{
+	padding-bottom: 70px;
+	width: 100%;
+}
+.leftArrow{
+	margin-left: -33%;
+}
+.head{
+	position: absolute;
+	left: 50%;
+	color: #fff;
+	font-size: 1.5rem;
+	margin-left: -1.5rem;
+	top: 0.2rem;
+}
+/*成功提示框*/
+.toast{
+	width: 100%;
+	display: none;
+}
+.mask{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+}
+.info{
+	position: fixed;
+	width: 80%;
+	text-align: center;
+	line-height: 4rem;
+	height: 4rem;
+	background: #fff;
+	border-radius: 5px;
+	top: 40%;
+	left: 10%;
+	box-shadow: 5px 5px 3px #a2a2a2;
+}
+.info img{
+	position: absolute;
+	left: 1rem;
+	top: 0.5rem;
+}
+/*log_in 登陆页面*/
+.back .glyphicon-arrow-left {
+	font-size: 20px;
+	font-weight: 100;
+	padding-left: 10px;
+	padding-top: 10px;
+	color: #32CD32;
+}
+/*Apply_join_Org*/
+.Apply_back {
+	background: #32CD32;
+	height: 30px;
+}
+
+.Apply_back .glyphicon-arrow-left {
+	color: #ffffff;
+	font-size: 17px;
+	padding: 6px;
+}
+
+.Apply_back a {
+	display: inline-block;
+	padding-left: 35%;
+	color: #ffffff;
+	letter-spacing: 1px;
+}
+
+.Apply_back .Self-introduction .introduction {
+	width: 100%;
+	height: 70px;
+	min-height: 20px;
+	margin-top: 10px;
+	padding: 5px;
+	padding-bottom: 56px;
+	border: none;
+	background: #ffffff;
+	overflow-y: hidden;
+}
+
+.log_in .log_head {
+	text-align: center;
+	color: #32CD32;
+}
+
+.log_in .log_head h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.log_in .log_head h2 {
+	font-size: 17px;
+	font-weight: 590;
+	padding-bottom: 20px;
+}
+.usr_and_pas .account_number .account, .usr_and_pas .pass_log .pas{
+	width: 100%;
+	height: 35px;
+	border: 1px solid #F0FF0;
+}
+
+.usr_and_pas .pass_log {
+	display: block;
+	margin-top: -20px;
+}
+
+.usr_and_pas .account_number span,.usr_and_pas .pass_log span {
+	display: inline-block;
+	position: relative;
+	bottom: -29px;
+	padding-left: 20px;
+	/*color: gray;*/
+}
+
+
+.usr_and_pas .account_number .account, .usr_and_pas .pass_log .pas{
+	display: block;
+	padding-left: 25%;
+	/*border-bottom-style: none;*/
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	letter-spacing: 1.5px;
+}
+
+.usr_and_pas .pass_log a {
+	float: right;
+	position: relative;
+	padding-right: 3%;
+	top: -20px;
+	font-size: 10px;
+	color: #32CD32;
+}
+.usr_and_pas .btn_of_log button,.Apply_back .btn_of_log button{
+	position: relative;
+	width: 80%;
+	height: 30px;
+	display: block;
+	margin-left: 10%; 
+	margin-top: 20px;
+	border: 1px solid #32CD32;
+	border-radius: 3px;
+	background: transparent;
+	color: #32CD32;
+}
+
+.top_pic {
+	/*height: 200px;*/
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	/*background: blue;*/
+}
+
+.top_pic h1 {
+	font-size: 17px;
+	padding: 0;
+	margin-bottom: 0; 
+	/*background: red;*/
+}
+.top_pic h2 {
+	font-size: 12px;
+	display: inline-block;
+	margin-top: 13px;
+	color: #006400;
+}
+
+.top_pic .num_and_time .time {
+	float: right;
+	display: inline-block;
+	margin-top: -25px;
+	font-size: 7px;
+	color: gray;
+}
+.top_pic .num_and_time .time {
+	margin-right: 57%;
+}
+
+.top_pic .num_and_time .per_num, .top_pic .num_and_time .eye_num {
+	float: right;
+	margin-top: -27px;
+	color: gray;
+	font-size: 10px;
+}
+
+.top_pic .num_and_time .per_num {
+	margin-right: 14%;
+}
+
+.top_pic .num_and_time .eye_num {
+	margin-right: 2%;
+}
+
+.top_pic .when_where_what {
+	padding: 10px 0;
+}
+.top_pic .when_where_what li {
+	padding: 1px 0;
+	font-size: 14px;
+}
+
+.top_pic .when_where_what span, .comment span {
+	padding-right: 5px;
+	font-weight: 900;
+	color: #32CD32;
+}
+
+.top_pic img , .comment .img_foot img {
+	width: 100%;
+	position: relative;
+	/*height: 190px;*/
+	display: block;
+	margin: 0 auto;
+}
+
+.comment {
+	/*height: 300px;*/
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	/*background: green;*/
+}
+
+.comment h2 {
+	color: gray;
+}
+
+.comment h3 {
+	line-height: 16px;
+}
+.comment h2,h3 {
+	font-size: 14px;
+	/*background: red;*/
+	margin: 2px;
+	padding: 1px;
+}
+
+.comment li {
+	font-size: 14px;
+	padding: 2px 0;
+}
+
+.comment p {
+	text-align: left;
+	width: 80%;
+	margin: -25px 5% 10px 20%;
+	display: inline-block;
+}
+
+.comment p span {
+	font-size: 12px;
+	font-weight: bold;
+	color: #999999;
+}
+
+.about .content .yello {
+	width: 10%;
+	float: left;
+}
+.about .content .yello img {
+	margin: 0px 5px 50px 0px;
+}
+.about .right_content {
+	width: 90%;
+	float: right;
+	padding-bottom: 8px;
+}
+.about .end_content {
+	height: 100px;
+}
+.clearfix:after {
+	content: '.';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+
+
+.footer {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	height: 40px;
+	line-height: 40px;
+	position: fixed;
+	bottom: 0;
+	padding-bottom: 0;
+}
+
+.footer li {
+	float: left;
+}
+
+.footer .left {
+	width: 35%;
+	background: #999999;
+	text-align: center;
+}
+
+.footer .right {
+	width: 65%;
+	/*background: #5BB85D;*/
+	background: #32CD32;
+	text-align: center;
+	text-decoration-style: none;
+}
+
+.footer a {
+	font-size: 6px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #ffffff;
+}
+#commentNum{
+	margin: 20px auto;
+}
+#commentNum span{
+	color: #a3a3a3;
+}
+#commentNum p{
+	position: relative;
+}
+#commentNum p span{
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	margin-left: -40px;
+}

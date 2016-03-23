@@ -1,0 +1,112 @@
+﻿@charset "utf-8";
+
+*{
+	padding: 0;
+	margin: 0;
+}
+html{
+	height: 100%;
+	font-size:10px;
+}
+body {
+	height: 100%;
+	background-color:#EFEEEC;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	font-size:1.6rem;
+}
+@media (min-width: 768px) and (max-width: 1200px){
+	.navbar-nav {
+		width: 100%;
+		margin: 5px auto;
+	}
+	.navbar-nav li a{
+		padding-bottom: 10px;
+	}
+	.the_indent{
+		text-indent: 35px;
+		width: 108%;
+	}
+}
+@media (min-width: 1200px){
+	.navbar-nav {
+		width: 100%;
+		margin: 5px auto;
+	}
+	.navbar-nav li a{
+		padding-bottom: 10px;
+	}
+	.the_indent{
+		text-indent: 35px;
+		width: 120%;
+	}
+}
+@font-face {font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:1.6rem;
+    font-style:normal;
+	color:#FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+#header{
+		background-color:#5CB85C;
+		width:100%;
+		color:#FFFFFF;
+		line-height:40px;
+		overflow:hidden;
+		text-align:center;
+		position: relative;
+}
+#back{
+	line-height: 40px;
+	float:left;
+	margin-left:5%;
+	font-size:1.6rem;
+}
+#tit-size{
+	font-size:1.8rem;
+	position:absolute;
+	left:50%;
+	margin-left:-2.7rem;
+}
+/*底部固定导航*/
+.footer{
+	width: 100%;
+	background: #fff;
+}
+.footer ul li{
+	color: #333;
+	display: block;
+	text-align: center;
+	float: left;
+	width: 33.3%;
+	margin-bottom: -15px;
+	margin-top: -15px;
+}
+
+.footer ul li img{
+	margin-bottom: -20px;
+}
+/*通讯录页面*/
+#tit-size{font-size:2rem;}
+.backLeft{font-size:1.6rem; color:#FFFFFF;}
+#wrap{padding-bottom:30px;}
+dl{width:100%; padding:0 5%; background-color:#FFFFFF;}
+dt{margin-top:1rem; margin-bottom:-1rem;font-size:1.8rem; color:#9A9691;}
+dd{
+	border-bottom:1px solid #EFEEEC; 
+	margin-top:15px; 
+	padding-left:5rem; 
+	padding:1rem 0 1rem 5rem; 
+	position:relative;}
+.arrow_right{color:#3F98FE; font-size:1.8rem;}
+.phone_number{position:absolute; left:40%;}
+dl span{font-size:1.8rem;}

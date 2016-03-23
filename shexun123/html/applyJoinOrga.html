@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+	<title>个人申请</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/details.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+	<div class="toast" id = "toast">
+		<div class="mask"></div>
+		<div class="info">
+			<img src="../img/successIcon.png" alt="">
+			<span>已发送</span>
+		</div>
+	</div>
+	<div class="Apply_back">
+		<!-- 返回上一页 -->
+		<a href="javascript:history.go(-1)" class = "leftArrow">
+			<span class="glyphicon glyphicon-arrow-left"></span>
+		</a>
+		<span class = "head">加入</span>
+			
+		<div class="Self-introduction">
+			<textarea class="introduction" cols="30" rows="10" placeholder="个人介绍"></textarea>
+		</div>
+
+		<div class="btn_of_log">
+			<button id = "applyButton">申请</button>
+		</div>
+	</div>
+	<!-- 底部导航栏 -->
+	<div class="footer navbar navbar-default navbar-fixed-bottom" id = "footer">
+		<ul class = "nav navbar-nav">
+			<li>
+				<img src="../img/trend_active.png">
+				<a href="trend.html">动态</a>
+			</li>
+			<li>
+				<img src="../img/notification.png">
+				<a href="history.html">通知</a>
+			</li>
+			<li>
+				<img src="../img/organization.png">
+				<a href="organization.html">社团</a>
+			</li>
+		</ul>
+	</div>
+	<script>
+		var apply = document.getElementById('applyButton');
+		var toast = document.getElementById('toast');
+		apply.onclick = function(){
+			toast.style.display = "block";
+			setTimeout(
+				function hide_toast(){
+	            toast.style.display = "none";
+        		},2000);
+		}
+	</script>
+</body>
+</html>

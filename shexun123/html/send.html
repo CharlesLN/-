@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>发送通知</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/dropdowns-enhancement.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/send.css">
+</head>
+<body>
+	<div class="sendHeader">
+		<span class="glyphicon glyphicon-arrow-left sendHeaderArrow"></span>
+		<span class="sendHeaderTitle">发送通知</span>
+	</div>
+	<!--发送通知-->	
+	<div class = "scroll_bug" id = "send_info">
+	<form class = "form-horizontal">
+		<div class = "form-group container">		
+			<div class = "SAHclub">
+				<div class="btn-group">
+				<button data-toggle="dropdown" class="btn btn-default dropdown-toggle SAHclubButton">
+					社团:&nbsp
+					<span data-label-placement>请选择社团</span>
+			  		<span class="caret"></span>
+				</button>
+		    	<ul class="dropdown-menu">
+			        <li>
+			      		<input type="radio" id="ID1" name="NAME" value="创新创业协会">
+			      		<label for="ID1">创新创业协会</label>
+			     	</li>
+			     	<li>
+			      		<input type="radio" id="ID2" name="NAME" value="cod创业协会">
+			      		<label for="ID2">cod创业协会</label>
+			     	</li>
+			     	<li>
+			      		<input type="radio" id="ID3" name="NAME" value="电子竞技俱乐部">
+			      		<label for="ID3">电子竞技俱乐部</label>
+			     	</li>
+		    	</ul>
+			</div>
+			<div class="SAHposition">
+				<span >职务：</span><span>社长</span>
+			</div>
+			</div>
+			<span class = "character_in_input">对象：</span>
+			<input type = "text" class = "form-control the_indent input_height" id = "text_input">
+			<a class = "add_button" href = "##" data-toggle="modal" data-target="#the_person">
+				<!-- <img src = "../img/plus1.ico" alt = "添加" class = "plus_in_input"> -->
+				<span class="glyphicon glyphicon-plus sendPlus"></span>
+			</a>
+			<span class = "character_in_input2">内容：</span>
+			<textarea rows = "9" class = "form-control no_top_border the_indent" id = "text_input1"></textarea>
+			<div class = "right_two_button">
+				<button class = "btn btn-default" id = "SAH_cancel">取消</button>
+				<button class = "sendButton" id = "SAH_send">发送</button>
+			</div>
+			<!--上传图片-->
+			<!-- <div class="imgUploader">
+				<div id="fileList" class="uploader-list"></div>
+    			<div id="filePicker">选择图片</div>
+    		</div> -->
+    		<a href="#" id="add_img"><span class="glyphicon glyphicon-picture">添加图片</span></a>
+			<input type="file" id="upload_image" name="image" />
+		</div>
+		<!-- 成功提示信息 -->
+		<div id="toast">
+		    <div class="mask_transparent"></div>
+		    <div class="the_toast">
+		        <span class="icon_toast"></span>
+		        <p class="toast_content">已发送</p>
+		    </div>
+		</div>
+	</form>
+	<div class="modal fade" id="the_person">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span>&times;</span>
+						<span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title">联系人</h4>
+				</div>
+				<div class="modal-body">
+					<form class = "form-horizontal">
+						<div class="form-group">
+								<label for="the_manager1" id = "the_manager1Label" class="col-xs-5 control-label">全体社员</label>
+							<div class="col-xs-6">
+								<input type="checkbox" id="the_manager1">
+							</div>
+						</div>
+						<div class="form-group">
+								<label for="the_manager2" id = "the_manager2Label" class="col-xs-5 control-label">全体管理员</label>
+							<div class="col-xs-6">
+								<input type="checkbox" id="the_manager2">
+							</div>
+						</div>
+						<hr>					
+						<div class="form-group theRadio">
+							<label for="the_manager3" id = "the_manager3Label" class="col-xs-5 control-label">cod创业协会篮球赛</label>
+							<div class="col-xs-6">
+								<!-- 单选框 -->
+								<input type="radio" id="the_manager3">
+							</div>
+						</div>
+					</form>
+					<div class="modal-footer">
+						<button class = "btn btn-default resetButton">重置</button>
+						<button class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button class="btn btn-primary" id = "choosen">确定</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ 
+		<!--分割线-->
+	<div class="footer navbar navbar-default navbar-fixed-bottom">
+		<ul class = "nav navbar-nav">
+			<li>
+				<img src="../img/trend.png">
+				<a href="trend.html">动态</a>
+			</li>
+			<li>
+				<img src="../img/notification_active.png">
+				<a href="history.html">通知</a>
+			</li>
+			<li>
+				<img src="../img/organization.png">
+				<a href="organization.html">社团</a>
+			</li>
+		</ul>
+	</div>
+
+    <script src = "../js/jQuery.js"></script>
+    <script src = "../js/bootstrap.js"></script>
+    <script src = "../js/dropdowns-enhancement.js"></script>
+	<script src = "../js/send.js"></script>	
+</body>
+</html>

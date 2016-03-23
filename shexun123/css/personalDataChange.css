@@ -1,0 +1,241 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 10px;
+}
+body{
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+}
+hr{
+	margin: 0 auto;
+	width: 90%;
+}
+/*顶部导航*/
+.perHeader{
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	height: 50px;
+	background: #5CB85C;
+	color: #fff;
+	line-height: 50px;
+	font-size: 1.8rem;
+}
+/*左箭头左边距*/
+.perHeaderIcon{
+	margin-left: 5%;
+	text-decoration: none;
+	color: #fff;
+}
+/*"个人"定位*/
+.perHeaderTitle{
+	position: absolute;
+	left: 50%;
+	margin-left: -1.8rem
+}
+/*总体定位*/
+.perContainer{
+	position: relative;
+	/*防止顶部和底部导航遮盖*/
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+/*头像名称部分*/
+.perName{
+	height: 60px;
+	background: #fff;
+	line-height: 60px;
+	font-size: 1.8rem;
+}
+.perName span{
+	margin: 0 2% 0 5%;
+}
+/*头像*/
+.perNameAvatar img{
+	width: 45px;
+	height: 45px;
+	border-radius: 30px;
+	padding: 2px 2px;
+	border: 1px solid #a3a3a3;
+}
+/*基础资料*/
+.perInfo{
+	width: 100%;
+	background: #fff;
+	margin: 20px 0;
+	font-size: 1.5rem;
+}
+.perInfo li a{
+	text-decoration: none;
+	color: #000;
+}
+.perInfo li{
+	list-style: none;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+}
+.perInfotip{
+	margin-left: 5%;
+	margin-right: 10%;
+	color: #a4a4a4;
+}
+/*右箭头*/
+.perInfoArrow{
+	position: absolute;
+	right: 5%;
+	top: 12px;
+	color: #a4a4a4;
+}
+/*社团部分*/
+.perClub{
+	width: 100%;
+	color: #a4a4a4;
+	background: #fff;
+	font-size: 1.8rem;
+}
+.perClub li{
+	list-style: none;
+	position: relative;
+}
+.perClub li a{
+	text-decoration: none;
+	color: #000;
+}
+/*加入社团标签*/
+.perClubTip{
+	margin-left: 5%;
+	height: 40px;
+	line-height: 40px;
+}
+/*社团头像*/
+.perClub img{
+	width: 45px;
+	height: 45px;
+	border-radius: 30px;
+	padding: 2px 2px;
+	border: 1px solid #a3a3a3;
+}
+.perClubName{
+	height: 60px;
+	line-height: 60px;
+	padding-left: 5%;
+}
+.perClubName span{
+	margin-right: 5%;
+}
+/*权限标签*/
+/*社长权限*/
+.perClubLabel_1{
+	position: absolute;
+	font-size: 1.5rem;
+	top: 20px;
+	right: 0;
+	height: 20px;
+	color: #fff;
+	line-height: 10px;
+	background: #CCE198;
+	padding: 5px;
+	border-radius: 5px;
+}
+/*更换电话*/
+/*顶部导航*/
+.CPHeader{
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	height: 50px;
+	background: #5CB85C;
+	color: #fff;
+	line-height: 50px;
+	font-size: 1.8rem;
+}
+/*左箭头左边距*/
+.CPHeaderIcon{
+	margin-left: 5%;
+	text-decoration: none;
+	color: #fff;
+}
+/*"个人"定位*/
+.CPHeaderTitle{
+	position: absolute;
+	left: 50%;
+	margin-left: -3.6rem
+}
+/*总体定位*/
+.CPcontainer{
+	position: relative;
+	/*防止顶部导航遮盖*/
+	padding-top: 70px;
+	padding-bottom: 10px;
+}
+.CPcontent{
+	background: #fff;
+	position: relative;
+}
+.CPcontent li{
+	height: 40px;
+}
+/*输入框前文字*/
+.CPtip{
+	font-size: 1.8rem;
+	line-height: 40px;
+	position: absolute;
+	left: 5%;
+	color: #a4a4a4;
+}
+/*输入框*/
+.CPcontent li input{
+	border: none;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 30%;
+	margin-top: 5px;
+	font-size: 1.5rem;
+	color: #a4a4a4;
+	width: 50%;
+}
+/*获取按钮*/
+.CPgetButton{
+	position: absolute;
+	right: 1%;
+	bottom: 5px;
+	width: 5rem;
+	height: 2.5rem;
+	background: transparent;
+	color: #5CB85C;
+	border: 1px solid #5CB85C;
+	border-radius: 5px;
+}
+/*完成按钮*/
+.CPfinishButton{
+	display: block;
+	width: 80%;
+	height: 3.5rem;
+	margin: 10px auto;
+	background: transparent;
+	color: #5CB85C;
+	border: 1px solid #5CB85C;
+	border-radius: 5px;
+}
+/*更改邮箱*/
+.CPcontent2{
+	background: #fff;
+	position: relative;
+}
+.CPcontent2 li{
+	height: 40px;
+}
+/*输入框*/
+.CPcontent2 li input{
+	border: none;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 30%;
+	margin-top: 5px;
+	font-size: 1.5rem;
+	color: #a4a4a4;
+	width: 60%;
+}

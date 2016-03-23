@@ -1,0 +1,120 @@
+@font-face {font-family: 'iconfont';
+    src: url('../fonts/iconfont2.eot'); /* IE9*/
+    src: url('../fonts/iconfont2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont2.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont2.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont2.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*避免被底部导航遮盖*/
+.hisContainer{
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+/*头部导航*/
+.hisHeader{
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    font-size: 1.4rem;
+    line-height: 40px;
+    background: #5cb85c;
+    color: #fff;
+    box-shadow: 1px 1px 1px #999;
+}
+.hisHeaderGet,.hisHeaderSend{
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+}
+.hisHeaderSlice{
+    position: absolute;
+    right: 10%;
+}
+/*导航栏选中下方边框*/
+.yellow{
+    border-bottom: 2px solid #ffff9d;
+}
+/*未选中灰色*/
+.gray{
+     color: rgba(255, 255, 255, .6);
+}
+/*时间轴*/
+.timeline{
+    margin-top: 20px;
+    background: url("../img/timeline.jpg") repeat-y scroll 20px 0;
+}
+.timeline li{
+    position: relative;
+    list-style: none;
+}
+.timeicon{
+    position: absolute;
+    top: -2px;
+    margin-left: 12px;
+    color: #5cb85c;
+    background: #eee;
+}
+.time{
+    margin: -10px 0 0 15%;
+    font-size: 1.2rem;
+    color: #5cb85c;
+}
+.panel{
+    border: none;
+} 
+.timeline-panel{
+    margin-top: 5px;
+    margin-left: 15%;
+    width: 80%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .1);
+    /*border-left: 2px solid red;*/
+}
+.panel-head{
+    padding: 0 10px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: #5cb85c;
+}
+.panel-time{
+    float: right;
+    font-size: 1.2rem;
+}
+.panel-body{
+    padding: 10px;
+    height: 40px;
+}
+.panel-body span{
+    float: left;
+}
+.panel-body:after{
+    content: ".";
+    height: 0;
+    display: block;
+    visibility: none;
+    clear: both;
+    opacity: 0;
+}
+.panel-content{
+    float: left;
+    width: 8em; 
+    color: #999;
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    overflow: hidden;
+}
+/*发出部分*/
+#send{
+    display: none;
+}

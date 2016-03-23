@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>创建社团</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/Manager.css" type="text/css"/>
+</head>
+<body>
+<div id="wrap">
+<!--顶部标题栏-->
+	<div id="header">
+		<a id="back" href="javascript:history.go(-1)"><i class="backLeft iconfont">&#xe67d;</i></a>
+		<span id="tit-size">创建社团</span>
+		<div id="nav"><a href="#">完成</a></div>
+	</div>
+	<form class="orga_form" action="#" method="post">
+		<div class="orga_name">
+			<span>名称</span>
+			<input type="text"/>
+		</div>
+		<div class="orga_type dropdown">
+				<div><span>类型<span></div>
+				<button class="text-left dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+					<span data-label-placement>请选择</span>
+					<i id="up_down" class="fa fa-angle-down"></i>
+				</button>
+				<hr class="hr_divide">
+			<ul class="pull-right drop_menu_content dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				<li role="presentation">
+					<input type="radio" id="ID1" name="NAME" value="明星颜值">
+					<label for="ID1">明星颜值</label>
+				</li>
+				<li role="presentation">
+					<input type="radio" id="ID2" name="NAME" value="语文哲史">
+					<label for="ID2">语文哲史</label>
+				</li>
+				<li role="presentation">
+					<input type="radio" id="ID3" name="NAME" value="法律心理">
+					<label for="ID3">法律心理</label>
+				</li>
+				<li role="presentation">
+					<input type="radio" id="ID4" name="NAME" value="运动旅行">
+					<label for="ID4">运动旅行</label>
+				</li>
+				<li role="presentation">
+					<input type="radio" id="ID5" name="NAME" value="养生医学">
+					<label for="ID5">养生医学</label>
+				</li>
+				<li role="presentation">
+					<input type="radio" id="ID6" name="NAME" value="影视动漫">
+					<label for="ID6">影视动漫</label>
+				</li>
+				<li role="presentation">
+					<input type="radio" id="ID7" name="NAME" value="棋牌军游">
+					<label for="ID7">棋牌军游</label>
+				</li>
+				<li role="presentation">
+					<input type="radio" id="ID8" name="NAME" value="歌舞戏剧">
+					<label for="ID8">歌舞戏剧</label>
+				</li>
+				<li role="presentation">
+					<input type="radio" id="ID9" name="NAME" value="软硬开发">
+					<label for="ID9">软硬开发</label>
+				</li>
+				<li role="presentation">
+					<input type="radio" id="ID10" name="NAME" value="艺术设计">
+					<label for="ID10">艺术设计</label>
+				</li>
+				<li role="presentation">
+					<input type="radio" id="ID11" name="NAME" value="学术竞赛">
+					<label for="ID11">学术竞赛</label>
+				</li>
+				<li role="presentation">
+					<input type="radio" id="ID12" name="NAME" value="逻辑口才">
+					<label for="ID12">逻辑口才</label>
+				</li>
+				<li role="presentation">
+					<input type="radio" id="ID13" name="NAME" value="经济金融">
+					<label for="ID13">经济金融</label>
+				</li>
+				<li role="presentation">
+					<input type="radio" id="ID14" name="NAME" value="公益服务">
+					<label for="ID14">公益服务</label>
+				</li>
+				<li role="presentation">
+					<input type="radio" id="ID15" name="NAME" value="创业求职">
+					<label for="ID15">创业求职</label>
+				</li>
+				<li role="presentation">
+					<input type="radio" id="ID16" name="NAME" value="天文地理">
+					<label for="ID16">天文地理</label>
+				</li>
+				<li role="presentation">
+					<input type="radio" id="ID16" name="NAME" value="其他类型">
+					<label for="ID16">其他类型</label>
+				</li>
+			</ul>
+		</div>
+		<!--社团简介-->
+		<div class="orga_brief">
+			<textarea rows="5" placeholder="社团简介"></textarea>
+		</div>
+</div>
+	<!--底部导航栏-->
+<div class="footer navbar navbar-default navbar-fixed-bottom" id = "footer">
+		<ul class = "nav navbar-nav">
+			<li>
+				<img src="../image/trend.png">
+				<a href="##">动态</a>
+			</li>
+			<li>
+				<img src="../image/notification.png">
+				<a href="##">通知</a>
+			</li>
+			<li>
+				<img src="../image/organization_active.png">
+				<a href="##">社团</a>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>	
+	<script src="../js/journal.js"></script>
+	<script src = "../js/dropdowns-enhancement.js"></script> 
+</body>
+</html>

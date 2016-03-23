@@ -1,0 +1,342 @@
+*,ul,p{
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+	font-size: 10px;
+}
+body{
+	font-family: Helvetica;
+	line-height: 1.6;
+	background: #f3f3f3;
+	position: relative;
+	height: 100%;
+}
+.warp{
+	position: relative;
+	padding-bottom: 70px;
+}
+/*顶部导航*/
+.prac-header{
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 40px;
+	color: #fff;
+	line-height: 40px;
+	background: #5cb85c;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .15)
+}
+.prac-header-arrow{
+	position: absolute;
+	top: 12px;
+	left: 5%;
+	color: #fff;
+	text-decoration: none;
+}
+.prac-header-title{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translate(-50%,0);
+	font-size: 1.6rem;
+}
+.prac-header-question{
+	position: absolute;
+	right: 5%;
+	top: 10px;
+	font-size: 1.8rem;
+	color: #fff;
+	text-decoration: none;
+}
+.prac-header-question:visited{
+	color: #fff;
+	text-decoration: none;
+}
+.prac-header-question:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.prac-header-question:active{
+	color: #fff;
+	text-decoration: none;
+}
+.prac-header-question:focus{
+	color: #fff;
+	text-decoration: none;
+}
+/*我的项目*/
+.prac-project-title{
+	padding: 45px 15px 5px 15px;
+	font-size: 1.2rem;
+	color: #999;
+}
+.prac-project-title-2{
+	float: right;
+	color: #5cb85c;
+	text-decoration: none;
+}
+.prac-project-title-2:visited{
+	color: #5cb85c;
+	text-decoration: none;
+}
+.prac-project-title-2:hover{
+	color: #5cb85c;
+	text-decoration: none;
+}
+.prac-project-title-2:active{
+	color: #5cb85c;
+	text-decoration: none;
+}
+.prac-project-title-2:focus{
+	color: #5cb85c;
+	text-decoration: none;
+}
+.prac-project-content{
+	padding: 10px 15px 10px 15px;
+	background: #fff;
+}
+.prac-content-input{
+	position: relative;
+}
+.prac-input-label{
+	position: absolute;
+	top: 4px;
+	left: 10px;
+	border: 0;
+	color: #999;
+}
+.prac-content-input input{
+	margin-bottom: 10px;
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid #eee;
+	line-height: 30px;
+	text-align: center;	
+}
+.prac-input-arrow{
+	position: absolute;
+	top: 7px;
+	right: 10px;
+	color: #999;
+}
+.prac-content-input ul{
+	display: none;
+	position: absolute;
+	z-index: 2;
+	top: 30px;
+	width: 100%;
+	border-radius: 0 0 5px 5px;
+	background: rgba(0, 0, 0, .7);
+}
+.prac-content-input li{
+	height: 40px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	list-style: none;
+}
+.prac-content-input li:nth-child(1){
+	border-bottom: 1px solid #fff;
+}
+.prac-content-textarea{
+	position: relative;
+}
+.prac-textarea-title{
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	color: #999;
+}
+.prac-content-textarea textarea{
+	padding: 5px 10px;
+	width: 100%;
+	height: 120px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	text-indent: 2.5em;
+}
+.prac-content-inspire{
+	position: relative;
+	width: 100%;
+}
+.prac-content-inspire h5{
+	margin: 10px 0;
+	font-size: 1.4rem;
+}
+.prac-inspire-subtitle{
+	position: absolute;
+	top: 0;
+	left: 6rem;
+	font-size: 1.2rem;
+	color: #999;
+}
+/*比例直线*/
+.prac-inspire-line{
+	width: 100%;
+	height: 30px;
+}
+.prac-inspire-line hr{
+	margin: 15px 0 0;
+	width: 240px;
+}
+.prac-inspire-line label{
+	position: relative;
+	padding-right: 45px;
+}
+.prac-inspire-line input{
+	position: absolute;
+	top: 18px;
+	margin-left: -55px;
+	/*display: none;*/
+}
+.percent{
+	position: absolute;
+	right: 0;
+}
+.prac-project-show{
+	padding: 5px 15px 5px 15px;
+	font-size: 1.2rem;
+	color: #999;
+}
+.prac-project-show-2{
+	float: right;
+	color: #5cb85c;
+	text-decoration: none;
+}
+.prac-project-show-2:visited{
+	color: #5cb85c;
+	text-decoration: none;
+}
+.prac-project-show-2:hover{
+	color: #5cb85c;
+	text-decoration: none;
+}
+.prac-project-show-2:active{
+	color: #5cb85c;
+	text-decoration: none;
+}
+.prac-project-show-2:focus{
+	color: #5cb85c;
+	text-decoration: none;
+}
+/*项目展示*/
+.prac-show-content{
+	position: relative;
+	padding: 5px 15px 5px 15px;
+	background: #fff;
+}
+.prac-show-tip{
+	font-size: 1.1rem;
+	color: #999;
+}
+.prac-show-input{
+	display: block;
+	padding: 0 5px;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+}
+.prac-show-img{
+	width: 100%;
+	margin-top: 10px;
+}
+.prac-show-img img{
+	width: 22%;
+	height: 50px;
+}
+.prac-show-img-plus{
+	position: relative;
+	width: 22%;
+	text-align: center;
+	font-size: 4rem;
+}
+.prac-show-img-plus:before{
+	position: relative;
+	top: 20%;
+}
+.prac-show-arrow{
+	position: absolute;
+	top: 90px;
+	right: 15px;
+	font-size: 2rem;
+	color: #999;
+	text-decoration: none;
+}
+.prac-show-arrow:visited{
+	color: #999;
+	text-decoration: none;
+}
+.prac-show-arrow:hover{
+	color: #999;
+	text-decoration: none;
+}
+.prac-show-arrow:active{
+	color: #999;
+	text-decoration: none;
+}
+.prac-show-arrow:focus{
+	color: #999;
+	text-decoration: none;
+}
+/*项目管理*/
+.prac-manage-tip{
+	position: relative;
+}
+.prac-manage-tip span{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translate(-50%,0);
+	z-index: 1;
+	padding: 5px 0;
+	font-size: 1.2rem;
+	color: #999;
+	background: #f3f3f3;
+}
+.prac-manage-tip:before{
+	position: absolute;
+	z-index: 0;
+	top: 13px;
+	left: 5%;
+	content: "";
+	width: 90%;
+	height: 1px;
+	background: #999;
+}
+.prac-project-manage{
+	margin-top: 30px;
+	background: #fff;
+}
+.prac-project-manage hr{
+	width: 90%;
+	margin: 0 auto;
+}
+.prac-manage-job,.prac-manage-vip{
+	padding: 10px 15px;
+	color: #999;
+}
+.prac-manage-arrow{
+	float: right;
+}
+.toast{
+	display: none;
+	position: fixed;
+	z-index: 999;
+	top: 200px;
+	left: 50%;
+	-webkit-transform: translate(-50%,0);
+	padding: 10px;
+	color: #fff;
+	border-radius: 5px;
+	background: rgba(0, 0, 0, .7);
+}
+input[type=file]{
+	position: absolute;
+	top: 70px;
+	left: 15px;	
+	width: 20%;
+	opacity: 0;
+}

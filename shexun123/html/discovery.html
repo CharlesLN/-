@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>社团</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/organization.css">
+</head>
+<body>
+	<!-- 发现和搜索框外层套一个div -->
+	<div class="discoverFix">
+		<!-- 顶部导航 -->
+		<div class="discoverHeader">
+			<span>发现</span>
+		</div>
+		<!-- 搜索框 -->
+		<div class = "orgaDiscover" id = "orgaDiscover" style = "display:block;">
+			<div class = "topSearch" id = "orgaSearch">
+				<input type = "text" id = "orgaSearchInput">
+				<label class = "orgaSearchLabel" id = "orgaSearchLabel">
+					<span class = "glyphicon glyphicon-search"></span>
+					<span>搜索</span>
+				</label>
+				<span class="glyphicon glyphicon-plus" id="topSearchPlus"></span>
+				<span id="orgaSearchCancel" class = "orgaSearchCancel">取消</span>
+			</div>
+		</div>
+	</div>
+	<!-- 此处添加一个类名 discoverResult -->
+	<div class="orgaResult discoverResult">
+		<!-- 直接把已有列表显示出来,搜索时再ajax更新 -->
+		<ul>
+			<li>
+				<div class="orgaResultContent">
+					<a class = "infoHref" href="organizationInfo.html">
+						<img src="../img/icon2.png" alt="" class = "orgaResultImg">
+						<span class = "orgaResultName">创新创业协会</span>
+						<span class = "orgaResultNum">26人</span>
+						<span class = "orgaResultAct">3活动
+							<span class = "orgaResultPara2">我们是一群致力于创新创业的有志青年</span>
+						</span>
+					</a>
+				</div>
+			</li>
+			<hr>
+			<li>
+				<div class="orgaResultContent">
+					<a class = "infoHref" href="organizationInfo.html">
+						<img src="../img/icon2.png" alt="" class = "orgaResultImg">
+						<span class = "orgaResultName">创新创业协会</span>
+						<span class = "orgaResultNum">26人</span>
+						<span class = "orgaResultAct">
+							<span>3活动</span>
+							<span class = "orgaResultPara2">我们是一群致力于创新创业的有志青年</span>
+						</span>	
+					</a>	
+				</div>
+			</li>
+			<hr>	
+		</ul>
+	</div>
+	<!-- 底部导航栏 -->
+	<div class="footer navbar navbar-default navbar-fixed-bottom" id = "footer">
+		<ul class = "nav navbar-nav">
+			<li>
+				<img src="../img/trend.png">
+				<a href="trend.html">动态</a>
+			</li>
+			<li>
+				<img src="../img/notification.png">
+				<a href="history.html">通知</a>
+			</li>
+			<li>
+				<img src="../img/organization_active.png">
+				<a href="organization.html">社团</a>
+			</li>
+		</ul>
+	</div>
+
+    <script src = "../js/jQuery.js"></script>
+    <script src = "../js/bootstrap.js"></script>
+    <script src = "../js/discovery.js"></script>
+</body>
+</html>

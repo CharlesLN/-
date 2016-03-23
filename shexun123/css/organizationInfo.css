@@ -1,0 +1,483 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 10px;
+}
+body{
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+	background: #f5f5f5;
+}
+/*总体定位*/
+.orgaContainer{
+	position: relative;
+	/*防止底部导航遮盖*/
+	padding-bottom: 60px;
+	/*防止顶部导航遮盖*/
+	padding-top: 50px;
+}
+/*顶部导航*/
+.orgaHeader{
+	width: 100%;
+	display: block;
+	height: 50px;
+	background: #5cb85c;
+	position: fixed;
+	z-index: 999;
+}
+.orgaHeader li{
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	list-style: none;
+	width: 50%;
+}
+.orgaHeader a{
+	display: block;
+	height: 50px;
+	color: #c3c3c3;
+	text-decoration:none;
+}
+.orgaHeader_Left a{
+	color: #fff;
+	border-bottom: 2px solid #FFFF9D;
+}
+/*主体部分*/
+.orgaMain{
+	/*position: fixed;*/
+	width: 100%;
+	height: 190px;
+	/*margin-top: 0;*/
+	/*background: url(../img/bg1.png);*/
+}
+.orgaMainHeader{
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 40px;
+	background: rgba(0, 0, 0, .27);
+}
+.orgaBlogPic{
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	width: 100%;
+}
+.orgaBlogPic img{
+    /*position: absolute;*/
+    /*z-index: 0;*/
+    width: 100%;
+    height: 190px;
+}
+/*分享按钮*/
+.orgaShare{
+	position: absolute;
+	top: 54px;
+	left: 20px;
+}
+.orgaShare span{
+	color: #a3a3a3;
+}
+.orgaShare a{
+	text-decoration: none;
+	color: #a3a3a3;
+}
+/*社团名称*/
+.orgaName{
+	position: relative;
+	z-index: 1;
+	font-size: 1.75rem;
+	display: block;
+	color: #fff;
+	text-align: center;
+}
+/*切换标签*/
+.orgaSwap{
+	position: absolute;
+	top: 54px;
+	right: 20px;
+}
+.orgaSwap a{
+	text-decoration: none;
+	color: #b3b3b3;
+}
+/*下拉菜单定位*/
+.orgaDownMenu{
+	position: absolute;
+	top: 18px;
+	left: -155px;
+}
+.orgaDownMenu li{
+	width: 200px;
+}
+/*社团头像*/
+.orgaAvatar{
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 40px;
+	margin: 30px auto;
+}
+/*主体底部成员数量等信息栏*/
+.orgaNum{
+	width: 100%;
+	height: 40px;
+	background: #000;
+	overflow: hidden;
+}
+.orgaNum li{
+	float: left;
+	list-style: none;
+	height: 60px;
+	margin-left: 8%;
+}
+.orgaNum a{
+	text-decoration: none;
+}
+/*数字*/
+.orgaNum_number{
+	display: block;
+	font-size: 1.5rem;
+	color: #fff;
+	margin: 0 auto;
+}
+/*信息名称*/
+.orgaNum_name{
+	display: block;
+	color: #a3a3a3;
+	font-size:1rem;
+	margin: -5px auto;
+}
+/*分隔符*/
+.orgaNum_split{
+	font-size: 2.5rem;
+}
+/*个人标签*/
+.orgaNum_person{
+	line-height: 40px;
+}
+.orgaNum_person a{
+	color: #a3a3a3;
+}
+/*中间选项卡*/
+.orgaMiddleNav{
+	width: 100%;
+	height: 30px;
+	background: #EEEEEE;
+	overflow: hidden;
+}
+.orgaMiddleNav ul{
+	display: block;
+	width: 38%;
+	height: 30px;
+	margin: 0 35%;
+	line-height: 30px;
+}
+.orgaMiddleNav li{
+	float: left;
+	list-style: none;
+	text-align: center;
+	font-size: 1.25rem;
+}
+.orgaMiddleNav_right{
+	margin-left: 30%;
+}
+.orgaMiddleNav a{
+	display: block;
+	width: 40px;
+	height: 30px;
+	text-decoration: none;
+	color: #ACACAC;
+}
+.orgaMiddleNav_right a{
+	color: #7E7E7E;
+	border-bottom: 2px solid #5CB85C;
+}
+/*页面内容*/
+.orgaContent{
+	margin-top: 2rem;
+	background: #fff;
+	display: none;
+}
+.orgaContent_label{
+	margin-top: 20px;
+	margin-left: 20px;
+	color: #a3a3a3;
+}
+/*分割线*/
+hr{
+	margin: 0 5%;
+}
+/*段落排版*/
+.orgaContent p{
+	width: 80%;
+	font-size: 1.5rem;
+	margin-top: -38px;
+	margin-left: 20%;
+	padding: 10px 20px;
+	work-break:break-all;
+	word-warp:break-word;	
+}
+/*管理部分*/
+.orgaManage{
+	width: 90%;
+	margin:0 auto;
+}
+.orgaManage li{
+	display: block;
+	list-style: none;
+	font-size: 1.5rem;
+	margin: 20px 20px;
+}
+.orgaManage a{
+	text-decoration: none;
+	color: #6F6F6F;
+}
+.orgaManage_name{
+	margin-left: 20px;
+	margin-right: 50%;
+}
+/*发现部分*/
+.orgaDiscover{
+	margin-top: -6rem;
+	display: none;
+}
+.topSearch{
+	width: 100%;
+	height: 5rem;
+	background: #d3d3d3;
+	position: relative;
+}
+.topSearch input{
+	position: absolute;
+	width: 90%;
+	height: 3rem;
+	line-height: 3rem;
+	font-size: 2rem;
+	bottom: 1rem;
+	left: 5%;
+	border-radius:5px;
+	border: 0;
+	padding: 0 1rem 0 1rem;
+}
+.orgaSearchLabel{
+	position: absolute;
+	color: #a3a3a3;
+	font-size: 2rem;
+	left: 40%;
+	top: 1.1rem;
+}
+/*获取焦点时搜索框*/
+.topSearchFocus{
+	width: 100%;
+	height: 5rem;
+	background: #d3d3d3;
+	position: relative;
+}
+.topSearchFocus input{
+	position: absolute;
+	width: 70%;
+	height: 3rem;
+	line-height: 3rem;
+	font-size: 2rem;
+	bottom: 1rem;
+	left: 5%;
+	border-radius:5px;
+	border: 0;
+	padding: 0 1rem 0 8rem;
+}
+.orgaSearchLabelFocus{
+	position: absolute;
+	color: #a3a3a3;
+	font-size: 2rem;
+	left: 8%;
+	top: 1.1rem;
+}
+/*取消*/
+.orgaSearchCancel{
+	display: none;
+	position: absolute;
+	font-size: 2rem;
+	color: #fff;
+	left: 82%;
+	top: 1.1rem;
+	cursor: pointer;
+}
+/*搜索按钮*/
+/*.orgaSearchButton{
+	position: absolute;
+	margin-top: 6rem;
+	margin-left: 10%;
+	border: 1px solid #5CB85C;
+	border-radius:5px;
+	background: #fff;
+	width: 80%;
+	height: 4rem;
+}*/
+/*发现背景图*/
+.orgaSearchBg{
+	width: 100%;
+	margin-top: 6rem;
+}
+/*搜索结果*/
+.orgaResult{
+	padding-bottom: 50px;
+}
+.orgaResult li{
+	list-style: none;
+	position: relative;
+}
+.orgaResult hr{
+	margin: 10px auto 10px;
+}
+/*搜索结果概述*/
+.orgaResultHead{
+	font-size: 1.2rem;
+	color: #a3a3a3;
+	margin: 10px 5% 0;
+}
+/*社团头像*/
+.orgaResultImg{
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	border: 1px solid #a3a3a3;
+	margin: 10px 5%;
+}
+/*社团名称*/
+.orgaResultName{
+	font-size: 1.5rem;
+	font-weight: bold;
+	position: absolute;
+	left: 25%;
+	top: 5px;
+}
+/*社团人数*/
+.orgaResultNum{
+	font-size: 1rem;
+	font-weight: bold;
+	background: #CCE198;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	padding: 2px;
+	position: absolute;
+	left: 25%;
+	top: 35px;
+}
+/*社团活动数*/
+.orgaResultAct{
+	font-size: 1rem;
+	font-weight: bold;
+	background: #FACD89;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	padding: 2px;
+	position: absolute;
+	left: 38%;
+	top: 35px;
+}
+/*已加入*/
+.orgaResultJoined{
+	font-size: 1rem;
+	font-weight: bold;
+	background: #E6737C;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	padding: 2px;
+	position: absolute;
+	left: 52%;
+	top: 35px;
+}
+/*社团介绍*/
+/*社团介绍已加入*/
+.orgaResultPara1{
+	font-size: 0.8rem;
+	font-weight: bold;
+	border: none;
+	color: #a3a3a3;
+	position: absolute;
+	top: 3px;
+	right: -260%;
+	width: 250%;
+	/*多余部分省略号*/
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.orgaResultPara2{
+	font-size: 0.8rem;
+	font-weight: bold;
+	border: none;
+	color: #a3a3a3;
+	position: absolute;
+	top: 3px;
+	right: -360%;
+	width: 350%;
+	/*多余部分省略号*/
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+/*discovery*/
+/*顶部导航*/
+.discoverHeader{
+	position: relative;
+	z-index: 999;
+	width: 100%;
+	height: 3rem;
+	margin: 0 0 5rem 0;
+	background: #5CB85C;
+	text-align: center;
+	color: #fff;
+	line-height: 3rem;
+}
+/*orgaInfo*/
+.orgaInfo{
+	padding-top: 0;
+}
+.orgaInfoLeftArrow{
+	position: absolute;
+	z-index: 1;
+	font-size: 2rem;
+	color:#a3a3a3;
+	left: 5%;
+	top: 1.2rem;
+}
+.orgaInfoName{
+	padding-top: 1rem;
+}
+.orgaInfoJoin{
+	display: block;
+	width: 80%;
+	height: 3rem;
+	margin: 2rem auto;
+	border: 1px solid #32CD32;
+	border-radius: 5px;
+	background: transparent;
+	color: #32CD32;
+	text-align: center;
+	line-height: 3rem;
+}
+/*分享遮罩层*/
+.shareMask{
+	display: none;
+	position: absolute;
+	top: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 200%;
+	background: rgba(0,0,0,0.7);
+}
+.shareMask span{
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	margin-left: -10rem;
+	color: #fff;
+	font-weight: bold;
+	font-size: 2rem;
+}

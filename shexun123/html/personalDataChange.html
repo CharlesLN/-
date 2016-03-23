@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>个人资料修改</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/personalDataChange.css">
+</head>
+<body>
+	<!-- 顶部标题 -->
+	<div class = "perHeader">
+		<a href="personData.html" class = "perHeaderIcon">
+			<span class = "glyphicon glyphicon-arrow-left"></span>
+		</a>
+		<span class = "perHeaderTitle">个人</span>
+	</div>
+
+	<div class="perContainer">
+		<!-- 姓名头像部分 -->
+		<div class="perName">
+			<span class = "perNameAvatar"><img src="../img/avatar.png" alt=""></span>
+			<span>阿珂</span>
+			<span><img src="../img/male.png" alt=""></span>
+		</div>
+		<!-- 个人基础资料部分,需后端数据 -->
+		<div class="perInfo">
+			<ul>
+				<li>
+					<span class ="perInfotip">学校</span>
+					<span>西安电子科技大学</span>
+				</li>
+				<hr>
+				<li>
+					<a href="changePhone.html">
+						<span class ="perInfotip">电话</span>
+						<span>187&nbsp4044&nbsp0566</span>
+						<span class = "glyphicon glyphicon-menu-right  perInfoArrow"></span>
+					</a>
+				</li>
+				<hr>
+				<li>
+					<a href="changeMailAdd.html">
+						<span class ="perInfotip">邮箱</span>
+						<span>25957566173@qq.com</span>
+						<span class = "glyphicon glyphicon-menu-right perInfoArrow"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- 已加入社团，需后端头像、名称数据 -->
+		<div class="perClub">
+			<ul>
+				<li class = "perClubTip">加入社团</li>
+				<hr>
+				<li class = "perClubName">
+					<a href="##">
+						<span><img src="../img/icon1.jpg" alt=""></span>
+						<span>Cod创业协会</span>
+						<span class = "perClubLabel_1">社长</span>
+					</a>
+				</li>
+				<hr>
+				<li class = "perClubName">
+					<a href="##">
+						<span><img src="../img/icon1.jpg" alt=""></span>
+						<span>西电通院创业工作室</span>
+						<span class = "perClubLabel_1">管理员</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer navbar navbar-default navbar-fixed-bottom" id = "footer">
+		<ul class = "nav navbar-nav">
+			<li>
+				<img src="../img/trend.png">
+				<a href="trend.html">动态</a>
+			</li>
+			<li>
+				<img src="../img/notification.png">
+				<a href="history.html">通知</a>
+			</li>
+			<li>
+				<img src="../img/organization_active.png">
+				<a href="organization.html">社团</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- 引用外部脚本 -->
+	<script src = "../js/jQuery.js"></script>
+    <script src = "../js/bootstrap.js"></script>
+</body>
+</html>

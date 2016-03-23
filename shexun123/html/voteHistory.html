@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+	<title>投票历史</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/voteHistory.css">
+</head>
+<body>
+	<div class="warp">
+		<div class="vote-header">
+			<a href = "javascript:history.go(-1)" class="vote-header-arrow">
+				<i class="iconfont">&#xe652;</i>
+			</a>	
+			<span class="vote-header-title">投票历史</span>
+			<!-- <i class="iconfont vote-header-plus">&#xe63c;</i> -->
+		</div>
+		<div class="vote-content">
+			<ul>
+				<li>
+					<img src="../img/bg1.png" alt="">
+					<div class="vote-content-note">
+						<span>王二</span>
+						<span>/</span>
+						<span>西安电子科技大学</span>			
+						<i class="iconfont vote-content-award award-act">&#xe614;</i>
+					</div>
+				</li>
+				<li>
+					<img src="../img/bg1.png" alt="">
+					<div class="vote-content-note">
+						<span>王小二</span>
+						<span>/</span>
+						<span>西安理工大学</span>			
+						<i class="iconfont vote-content-award">&#xe614;</i>
+					</div>
+				</li>
+				<li>
+					<img src="../img/bg1.png" alt="">
+					<div class="vote-content-note">
+						<span>王小二</span>
+						<span>/</span>
+						<span>西安XX职业技术学院</span>			
+						<i class="iconfont vote-content-award">&#xe614;</i>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="footer navbar navbar-default navbar-fixed-bottom" id = "footer">
+			<ul class = "nav navbar-nav">
+				<li>
+					<img src="../img/trend.png">
+					<a href="trend.html">动态</a>
+				</li>
+				<li>
+					<img src="../img/notification.png">
+					<a href="history.html">通知</a>
+				</li>
+				<li>
+					<img src="../img/organization_active.png">
+					<a href="organization.html">社团</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="../js/jQuery.js"></script>
+	<script>
+		$("img").click(function(){
+			// 跳转
+			console.log(1);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>进行签到</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="../css/public.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/sign_now.css" type="text/css"/>
+</head>
+<body>
+	<!--顶部标题栏-->
+	<div id="wrap">
+		<div id="header">
+			<a id="back" href="javascript:history.go(-1)"><i class="backLeft glyphicon glyphicon-arrow-left"></i></a>
+			<span id="tit-size">进行签到</span>
+			<div id="nav"><a href="##">完成</a></div>
+		</div>
+		<!--签到事件，时间，签到人数统计-->
+		<div class="this_content">
+			<div class="who_when">
+				<h3>创业大赛</h3>
+				<div>
+					<span>2016.1.13</span>
+					<span class="who_sign">马雄全体组员</span>
+				</div>
+			</div>
+			<div class="the_sum">
+				<span class="count_signed" id="signedNum">6</span>&nbsp;/&nbsp;
+				<span id="count_all">21</span>人
+			</div>
+		</div>
+		<!--签到具体细节-->
+		<div class="sign_now_signed">
+			<!--已签到人数-->
+			<div class="people_sign_num">
+				<span class="count_signed">6</span>人已签
+			</div>
+			<!--已签到人-->
+			<!-- <table class="signed-peo"> -->
+				<ul class="signed-peo">
+					<li>张三</li>
+					<li>张小三</li>
+					<li>张三</li>
+					<li>张三</li>
+					<li>张三</li>
+					<li>张三</li>
+				</ul>
+			<!-- </table> -->
+			<!--未签到人数-->
+			<div class="people_not_sign_sum">
+				<span class="count_not_sign" id="unsignedNum">15</span>人未签
+				<span class="pull-right">点击对应名字进行签到</span>
+			</div>
+			<!--未签到人-->
+			<div class="unsigned-table">
+				<!-- <table class="unsigned-peo"> -->
+					<ul class="unsigned-peo">
+						<li>张三</li>
+						<li>张小三</li>
+						<li>张三</li>
+						<li>张三</li>
+						<li>张三</li>
+						<li>张三</li>
+						<li>张三</li>
+						<li>张三</li>
+						<li>张三</li>
+						<li>张三</li>
+						<li>张三</li>
+						<li>张三</li>
+						<li>张三</li>
+						<li>张三</li>
+						<li>张三</li>
+					</ul>
+				<!-- </table> -->
+			</div>
+		</div>
+	</div>
+	<!--底部导航栏-->
+	<div class="footer navbar navbar-default navbar-fixed-bottom" id = "footer">
+		<ul class = "nav navbar-nav">
+			<li>
+				<img src="../img/trend.png">
+				<a href="##">动态</a>
+			</li>
+			<li>
+				<img src="../img/notification.png">
+				<a href="##">通知</a>
+			</li>
+			<li>
+				<img src="../img/organization_active.png">
+				<a href="##">社团</a>
+			</li>
+		</ul>
+	</div>
+
+	<script src="../js/jQuery.js"></script>	
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/sign_now.js"></script>
+</body>
+</html>

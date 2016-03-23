@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
+</head>
+<body>
+	<div class="toast" id = "toast">
+		<div class="mask"></div>
+		<div class="info">
+			<img src="../img/successIcon.png" alt="">
+			<p>提交成功,验证信息以发至邮箱,半小时内查看验证即可完成注册</p>
+			<button class = "iknow" id = "iknow">我知道了</button>
+		</div>
+	</div>
+	<a href="index.html"><span class = "glyphicon glyphicon-arrow-left leftArrow"></span></a>
+		<p class="head1">社讯网</p>
+		<p class="head2">做最贴心的社团管理工具</p>
+	<div class = "container">
+		<div>
+			<span>姓名</span>
+			<input id = "name" type="text" placeholder = "不可修改，请填真实姓名">
+		</div>
+		<div class = "sex">
+			<span>性别</span>
+			<input type="radio" id = "femaleRadio" value = "女">
+			<input type="radio" id = "maleRadio" value = "男">
+			<label for="femaleRadio"><i class = "iconfont" id = "female">&#xf000c;</i></label>
+			<label for="maleRadio"><i class = "iconfont" id = "male">&#xe631;</i></label>
+		</div>
+		<div class = "school">
+			<span>学校</span>
+			<input type="text" id = "search" placeholder = "请填写或选择学校名称">
+			<div class="option">
+				<ul>
+					<li>
+						<label>陕西科技大学</label>
+					</li>
+					<hr>
+					<li>
+						<label>西安邮电大学</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<span>手机</span>
+			<input id = "phone" type="text" placeholder = "社团通知将发送至该号">
+		</div>
+		<div>
+			<span>邮箱</span>
+			<input type="text" id = "mailInput">
+			<label class = "mail">@qq.com</label>
+		</div>
+		<div>
+			<span>密码</span>
+			<input type="password" id = "passwordInput">
+			<span class = "glyphicon glyphicon-eye-open eye" id = "eye"></span>
+		</div>
+		<div>
+			<span>验证码</span>
+			<input type="text" id = "identifyCode">
+			<input type="hidden" id = "identifyCodeHide" value = "111111">
+			<!-- value="<s:property value='#session.num'/>" -->
+			<button class = "get">获取</button>
+		</div>
+	</div>
+	<button class = "register" id = "registerButton">注册</button>
+	
+	<script type="text/javascript" src = "../js/jQuery.js"></script>
+	<script type="text/javascript" src = "../js/touch.js"></script>
+	<script type="text/javascript" src = "../js/register.js"></script>
+</body>
+</html>

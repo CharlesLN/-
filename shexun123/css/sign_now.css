@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+html{font-size: 10px; height:100%; color:#000000;}
+body{
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+	position: relative;
+	height: 100%;
+	background:#FFFFFF;
+}
+#nav{
+	line-height: 40px;
+	float:right;
+	margin-right:5%;
+}
+#nav a{
+	text-decoration: none;
+	color: #fff;
+}
+#tit-size{
+	font-size:1.8rem;
+}
+a{color:#FFFFFF;}
+#wrap{
+	padding-bottom:70px;	
+}
+li{list-style-type:none;}
+li:hover{
+	cursor:pointer;	
+}
+.this_content{
+	background:#5CB85C; 
+	border-top:1px solid #7ad277; 
+	padding:2rem 5%; 
+	overflow:hidden;
+	position:relative;
+	color:#FFFFFF;	
+}
+.who_when{
+	float:left;	
+}
+.who_when h3{
+	margin:0px; 
+	font-size:2rem;	
+}
+.who_when div{
+	margin-top:5px;
+}
+.who_when div span{
+	font-size:1.2rem;	
+}
+.the_sum{
+	float:right; 
+	font-size:2rem;
+	position:absolute;
+	top:50%;
+	right:5%;
+	margin-top:-1rem;	
+}
+.who_sign{
+	margin-left:0.5rem;	
+}
+.sign_now_signed{
+	width:100%;
+}
+.people_sign_num{
+	border-bottom:1px solid #EFEEEC;
+	margin:0 5%;
+	padding:0.7rem 0;
+	color:#9A9691;
+	font-size:1.2rem;	
+}
+.people_sign_num span{
+	color:#9A9691;	
+}
+.people_not_sign_sum{
+	border-top: 1px solid #EFEEEC;
+	padding:10px 5%;
+	margin-top: 10px;
+	color:#9A9691;
+	font-size:1.2rem;
+		
+}
+.people_not_sign_sum span{
+	color:#9A9691;	
+}
+/*已签到表格*/
+.signed-peo{	
+	color: #999;
+	font-size: 1.4rem;
+}
+.signed-peo:after{
+	content: "";
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+.signed-peo li{
+	float: left;
+	margin-top: 10px;
+	width: 20%;
+	text-align: center;
+}
+/*.signed-peo{
+	width: 90%;
+	margin-left: 5%;
+	text-align: center;
+	color: #999;
+	font-size: 1.4rem;
+}
+.signed-peo td{
+	padding-top: 10px;
+}*/
+/*未签到表格*/
+.unsigned-peo{
+	width: 90%;
+	margin-left: 5%;
+	margin-bottom: 0;
+}
+.unsigned-peo:after{
+	content: "";
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+.unsigned-peo li{
+	float: left;
+	width: 25%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	border-top: 1px solid #EFEEEC;
+	border-right: 1px solid #EFEEEC;
+}
+.unsigned-peo li:nth-child(4n){
+	border-right: 0;
+}
+.unsigned-table{
+	border-bottom: 1px solid #EFEEEC;
+}
+/*.unsigned-peo{
+	margin-left: 5%;
+	width: 90%;
+	text-align: center;
+}
+.unsigned-peo tr td:nth-child(4){
+	border-right: 0;
+}
+.unsigned-peo tr:last-child td{
+	border-bottom: 0;
+}
+.unsigned-peo td{
+	width: 22.5%;
+	height: 50px;
+	vertical-align: middle;
+	border-top: 1px solid #EFEEEC;
+	border-right: 1px solid #EFEEEC;
+	border-bottom: 1px solid #EFEEEC;
+}*/

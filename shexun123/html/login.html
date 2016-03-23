@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+	<title>登陆</title>
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+	<div class="back">
+		<a class="glyphicon glyphicon-arrow-left" href="index.html"></a>
+	</div>
+	
+	<section class="log_in">
+		<div class="log_head">
+			<h1>社讯网</h1>
+			<h2>做最贴心的社团管理工具</h2>
+		</div>
+
+
+		<div class="usr_and_pas">
+			<div>
+				<span>账号</span>
+				<input type="text" placeholder="邮箱 / 手机号">
+			</div>
+			<hr>
+			<div>
+				<span>密码</span>
+				<input type="password">
+				<a href="##" class = "forget">忘记？</a>
+			</div>
+		</div>
+		<button class = "login" id = "login">登陆</button>
+	</section>
+	<script type="text/javascript">
+		var loginBtn = document.getElementById('login');
+		loginBtn.onclick = function(){
+			window.location.href = "discovery.html";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>社团详情</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/organizationInfo.css">
+	<link rel="stylesheet" href="../css/swiper-3.2.7.min.css">
+</head>
+<body>
+	<!-- 分享提示遮罩层 -->
+<!-- 	<div class = "shareMask" id = "shareMask">
+		<span>点击右上角分享到朋友圈吧~</span>
+	</div> -->
+	<div class = "orgaContainer orgaInfo">
+		<!-- 我的 -->
+		<div class = "orgaMy" id = "orgaMy">
+		<!-- 概况 -->
+			<div class = "orgaMain">
+				<div class="orgaMainHeader">
+					<a href="javascript:history.go(-1)">
+					<span class = "glyphicon glyphicon-arrow-left orgaInfoLeftArrow"></span>
+				</a>	
+				<!-- 后端数据填入协会名称 -->
+				<span class = "orgaName orgaInfoName">cod创业协会</span>
+				</div>
+				<!-- 添加 -->
+				<div class="orgaBlogPic">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide swiper-no-swiping">
+							<img src="../img/bg1.png" alt="">
+						</div>
+						<div class="swiper-slide swiper-no-swiping">
+							<img src="../img/starBg.png" alt="">
+						</div>
+						<div class="swiper-slide swiper-no-swiping">
+							<img src="../img/text.png" alt="">
+						</div>
+				 	</div>
+				</div>
+				<!-- 删除 -->
+<!-- 				<img src="../img/icon1.jpg" alt="avatar" class = "orgaAvatar">
+				<div class="orgaNum">
+					<ul>
+						<li>
+							<a href="##">
+								<span class = "orgaNum_number">24</span>
+								<span class = "orgaNum_name">成员</span>
+							</a>
+						</li>
+						<li class = "orgaNum_split">|</li>
+						<li>
+							<a href="##">
+								<span class = "orgaNum_number">75</span>
+								<span class = "orgaNum_name">活动</span>
+							</a>
+						</li>
+						<li class = "orgaNum_split">|</li>
+						<li>
+							<a href="##">
+								<span class = "orgaNum_number">126</span>
+								<span class = "orgaNum_name">通知</span>
+							</a>
+						</li>
+						<li class = "orgaNum_split">|</li>
+						<li class = "orgaNum_person" id = "share">
+							<span>
+								<a href = "##">
+									<span>分享</span>
+									<span><img src="../img/share.png" alt=""></span>
+								</a>
+							</span>
+						</li>
+					</ul>
+				</div> -->
+			</div>
+			<!-- 资料部分 -->
+			<div class = "orgaContent" id = "orgaContent" style = "display:block;">
+				<!-- 后端向p中填入数据 -->
+				<ul>
+					<li>
+						<label class = "orgaContent_label" for="orgaP">始于</label>
+						<div class="orgaContent_p">
+							<p id = "orgaP">2015年1月24日</p>
+						</div>
+						<hr>
+					</li>
+					<li>
+						<label class = "orgaContent_label" for="orgaP">学校</label>
+						<div class="orgaContent_p">
+							<p id = "orgaP">西安电子科技大学</p>
+						</div>
+						<hr>
+					</li>
+					<li>
+						<label class = "orgaContent_label" for="orgaP">简介</label>
+						<div class="orgaContent_p">
+							<p id = "orgaP">有这样一部动漫席卷而来，瞬间刮起的数码风暴。有那么一部动漫，曾经占据着大多数90后童年的记忆，或许我们还只是懵懂得稚气未脱，而这么一群参加夏令营的孩子却被选召。</p>
+						</div>
+						<hr>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<button class = "orgaInfoJoin">加入</button>
+	</div>
+	<!-- 底部导航栏 -->
+	<div class="footer navbar navbar-default navbar-fixed-bottom" id = "footer">
+		<ul class = "nav navbar-nav">
+			<li>
+				<img src="../img/trend.png">
+				<a href="trend.html">动态</a>
+			</li>
+			<li>
+				<img src="../img/notification.png">
+				<a href="history.html">通知</a>
+			</li>
+			<li>
+				<img src="../img/organization_active.png">
+				<a href="organization.html">社团</a>
+			</li>
+		</ul>
+	</div>
+	<script src = "../js/jQuery.js"></script>
+	<script src = "../js/swiper-3.2.7.jquery.min.js"></script>
+	<script src = "../js/organizationInfo.js"></script>
+</body>
+</html>

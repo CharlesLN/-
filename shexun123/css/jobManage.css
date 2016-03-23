@@ -1,0 +1,177 @@
+*,ul{
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+	font-size: 10px;
+}
+body{
+	font-family: Helvetica;
+	color: #333;
+	line-height: 1.6;
+	background: #f3f3f3;
+	position: relative;
+	height: 100%;
+}
+.wrap{
+	position: relative;
+	padding-bottom: 70px;
+}
+.jobM-header{
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	color: #fff;
+	line-height: 40px;
+	background: #5cb85c;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .15)
+}
+.jobM-header a{
+	position: absolute;
+	left: 5%;
+	color: #fff;
+	text-decoration: none;
+}
+.jobM-header-title{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translate(-50%,0);
+	font-size: 1.6rem;
+}
+.jobM-request-title{
+	padding: 45px 15px 5px 15px;
+	font-size: 1.2rem;
+	color: #999;
+}
+.jobM-request-title-2{
+	float: right;
+	color: #5cb85c;
+}
+.jobM-request-content{
+	position: relative;
+	padding: 0 0 5px 0;
+	background: #fff;
+}
+.jobM-request-content li{
+	position: relative;
+	padding: 10px 15px 10px 15px;
+	list-style: none;
+}
+.jobM-request-content img{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+.jobM-request-content h5{
+	position: absolute;
+	top: 10px;
+	left: 70px;
+	margin: 0;
+}
+.jobM-request-content-time{
+	position: absolute;
+	top: 25px;
+	left: 70px;
+	color: #999;
+}
+.down-arrow{
+	float: right;
+	margin-top: 10px;
+	color: #999;
+}
+/*请求中的更多*/
+.jobM-request-more{
+	display: none;
+	margin-top: 10px;
+	height: 80px;
+	border-top: 1px solid #eee;
+}
+.jobM-request-more span{
+	margin-left: 55px;
+}
+.jobM-request-more strong{
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 2rem;
+}
+.jobM-request-yes,.jobM-request-no{
+	position: absolute;
+	bottom: 0;
+	width: 50%;
+	height: 40px;
+	border: 0;
+	color: #fff;
+}
+.jobM-request-yes{
+	left: 0;
+	background: #5cb85c;
+}
+.jobM-request-no{
+	right: 0;
+	background: #ff393a;
+}
+/*股权激励*/
+.jobM-stock-title{
+	padding: 5px 15px 5px 15px;
+	font-size: 1.2rem;
+	color: #999;
+}
+.jobM-stock-content{
+	position: relative;
+	padding: 0 0 5px 0;
+	background: #fff;
+}
+.jobM-stock-content li{
+	position: relative;
+	padding: 10px 15px 10px 15px;
+	list-style: none;
+}
+.jobM-stock-content img{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+.jobM-stock-content h5{
+	position: absolute;
+	top: 10px;
+	left: 70px;
+	margin: 0;
+}
+.jobM-stock-content-time{
+	position: absolute;
+	top: 25px;
+	left: 70px;
+	color: #999;
+}
+/*股权激励中更多*/
+.jobM-stock-more{
+	display: none;
+	margin-top: 10px;
+	height: 80px;
+	border-top: 1px solid #eee;
+}
+.jobM-stock-more span{
+	margin-left: 55px;
+}
+.jobM-stock-more strong{
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 2rem;
+}
+.jobM-stock-yes,.jobM-stock-no{
+	position: absolute;
+	bottom: 0;
+	width: 50%;
+	height: 40px;
+	border: 0;
+	color: #fff;
+}
+.jobM-stock-yes{
+	left: 0;
+	background: #5cb85c;
+}
+.jobM-stock-no{
+	right: 0;
+	background: #ff393a;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+	<title>创业实习</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/practice.css">
+</head>
+<body>
+	<div class="warp">
+		<div class="prac-header">
+			<a href="javascript:history.go(-1)">
+				<span class="glyphicon glyphicon-arrow-left prac-header-arrow"></span>
+			</a>
+			<span class="prac-header-title">创业实习</span>
+			<a href="##" class="glyphicon glyphicon-question-sign prac-header-question" data-toggle="modal" data-target="#prac-question-pop"></a>
+		</div>
+		<div class="modal fade" id="prac-question-pop">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		        	<div class="modal-header">
+		          		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		          		<h4 class="modal-title">规则说明</h4>
+		        	</div>
+		      		<div class="modal-body">
+		        		<span style="font-size: 1.4rem;font-weight: 600;">创业者：</span><br>
+		        		1.创业者可在我的项目中发布创业项目，发布的项目将在活动主页面进行展示，供技术人员选择投递简历<br>
+		        		2.发布项目时需要选择为我方平台出让的股份，出让股份越高，对技术人员的指标奖励越大，越容易获得技术水平高的用户，对应的技术难度也应越高。<br>
+		        		3.在技术人员完成产品开发时，需要创业者在我的项目里进行项目展示，然后在应聘管理中点击同意并向我方平台邮寄股份出让合同，在我方收到合同并对项目进行审核后，将会为该技术人员进行对应的指标奖励发放。即只有在技术人员完成了项目开发股份出让合同才生效，如果没有通过我方平台完成产品开发则我方平台不收取任何费用及股份<br>
+		        		4.凡是与我方成功签署股份出让合同的，将成为CoD企业家俱乐部的初级会员，享受我方平台提供的融资对接、上下游产业链对接、媒体宣传等创业服务，还可参加每年平台主办的各种企业家联谊活动，资源共享，共同发展。<br>
+		        		<span style="font-size: 1.4rem;font-weight: 600;">技术人员：</span><br>
+		        		1.选择自己感兴趣的创业项目进行申请，经项目发起人同意后即可参与产品开发，进行技术实践<br>
+		        		2.一旦产品开发完成，发起者与我方平台签订了股份出让合约，通过了产品审核，则可获得相应的技术指标（软硬开发、艺术设计）奖励，最低100点，最高300点，当技术指标累计超过999点时，则可本科毕业时选择平台合作的著名企业中进行实习就业，如果因技术水平没有达到期望企业要求导致无法正常实习，我平台将进行至少2000元的信誉补偿，同时将由平台协助解决就业。<br>
+		      		</div>
+		    	</div>
+		  	</div>
+		</div>
+		<div class="prac-project-title">
+			<span class="prac-project-title-1">我的项目</span>
+			<a href="##" class="prac-project-title-2">修改</a>
+		</div>
+		<div class="prac-project-content">
+			<div class="prac-content-input">
+				<span class="prac-input-label">名称</span>
+				<input type="text">
+			</div>
+			<div class="prac-content-input">
+				<div id="prac-input">
+					<span class="prac-input-label">类型</span>
+					<input type="text" value="移动IT" readonly>
+					<span class="glyphicon glyphicon-menu-down prac-input-arrow"></span>
+				</div>
+				<ul id="prac-input-ul">
+					<li>软硬开发</li>
+					<li>艺术设计</li>
+				</ul>
+			</div>
+			<div class="prac-content-textarea">
+				<span class="prac-textarea-title">简介</span>
+				<textarea></textarea>
+			</div>
+			<div class="prac-content-inspire">
+				<h5>期权激励</h5>
+				<span class="prac-inspire-subtitle">(为员工承诺的期权奖励)</span>
+				<div class="prac-inspire-line">
+					<hr>
+					<label for="num-1">1</label>
+					<input type="radio" name="num" id="num-1">
+					<label for="num-2">2</label>
+					<input type="radio" name="num" id="num-2">
+					<label for="num-3">3</label>
+					<input type="radio" name="num" id="num-3">
+					<label for="num-4">4</label>
+					<input type="radio" name="num" id="num-4">
+					<label for="num-5">5</label>
+					<input type="radio" name="num" id="num-5">
+					<span class="percent">%</span>			
+				</div>
+			</div>		
+		</div>
+		<div class="prac-project-show">
+			<span class="prac-project-show-1">项目展示</span>
+			<a href="##" class="prac-project-show-2">修改</a>
+		</div>
+		<div class="prac-show-content">
+			<span class="prac-show-tip">注：我们将根据您的项目展示情况提供后续推广及融资服务</span>
+			<input class="prac-show-input" type="text" placeholder="网站主页">
+			<div class="prac-show-img">
+				<span class="glyphicon glyphicon-plus prac-show-img-plus"></span>
+				<input type="file" class="img-uploader">
+				<img src="../img/bg1.png">
+				<img src="../img/bg1.png">
+				<img src="../img/bg1.png">
+			</div>
+			<a class="glyphicon glyphicon-chevron-right prac-show-arrow"></a>
+		</div>
+		<p class="prac-manage-tip">
+			<span>项目管理</span>
+		</p>
+		
+		<div class="prac-project-manage">
+			<div class="prac-manage-job">
+				<span>应聘管理</span>
+				<span class="glyphicon glyphicon-chevron-right prac-manage-arrow"></span>
+			</div>
+			<hr>
+			<div class="prac-manage-vip">
+				<span>购买会员</span>
+				<span class="glyphicon glyphicon-chevron-right prac-manage-arrow"></span>
+			</div>
+		</div>
+
+		<div class="toast">
+			<p>购买会员后方可显示</p>
+		</div>
+
+		<div class="footer navbar navbar-default navbar-fixed-bottom" id = "footer">
+			<ul class = "nav navbar-nav">
+				<li>
+					<img src="../img/trend_active.png">
+					<a href="trend.html">动态</a>
+				</li>
+				<li>
+					<img src="../img/notification.png">
+					<a href="history.html">通知</a>
+				</li>
+				<li>
+					<img src="../img/organization.png">
+					<a href="organization.html">社团</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="../js/jQuery.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/practice.js"></script>
+</body>
+</html>

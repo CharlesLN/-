@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>通知详情</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/notification.css">
+</head>
+<body>
+	<div class="notiContainer">
+		<div class = "notiHeader">
+			<a href = "javascript:history.go(-1)" class = "left_arrow">
+			<span class="icon glyphicon glyphicon-arrow-left"></span>
+			</a>
+			<span class="notiInfo">通知详情</span>
+		</div>
+		<div class="notiContent">
+			<h4>创业大赛通知</h4>
+			<span class="notiSubTitle">创业协会</span>
+			<span class="notiTime">1月24日/周五 12：12</span>
+			<p>今天晚上我们将会举办什么活动，今天晚上我们将会举办什么活动，今天晚上我们将会举办什么活动，今天晚上我们将会举办什么活动。</p>
+			<hr>
+			<div class="notiContentImg">
+				<img src="../img/bg1.png" alt="">
+				<img src="../img/bg1.png" alt="">
+				<img src="../img/bg1.png" alt="">
+				<img src="../img/bg1.png" alt="">
+				<span class="glyphicon glyphicon-chevron-right imgRight"></span>
+			</div>
+		</div>
+		<button class="notiYes">收到</button>
+		<button class="notiNo" data-toggle="modal" data-target="#leave-reason">请假</button>
+		<!-- 已请假显示 -->
+		<!-- <p class="leaveReason">已请假： 晚上不去了晚上不去了，晚上不去了，晚上不去了。</p> -->
+	</div>
+	<div class="modal fade the_top2" id="leave-reason">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+		        <div class="modal-body">
+			        <textarea cols="30" rows="3" class = "leaveText"></textarea>
+			        <button class = "leaveSend">发送</button>
+		        </div>
+	        </div>
+	    </div>
+	</div>
+	<!-- 提示信息 -->
+	<div id="toast">
+	    <div class="mask_transparent"></div>
+	    <div class="the_toast">
+	        <span class="icon_toast"></span>
+	        <p class="toast_content">发送成功</p>
+	    </div>
+	</div>
+	<!-- 底部导航 -->
+	<div class="footer navbar navbar-default navbar-fixed-bottom">
+		<ul class = "nav navbar-nav">
+			<li>
+				<img src="../img/trend.png">
+				<a href="trend.html">动态</a>
+			</li>
+			<li>
+				<img src="../img/notification_active.png">
+				<a href="history.html">通知</a>
+			</li>
+			<li>
+				<img src="../img/organization.png">
+				<a href="organization.html">社团</a>
+			</li>
+		</ul>
+	</div>
+	<script src="../js/jQuery.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script src = "../js/notification2.js"></script>
+</body>
+</html>

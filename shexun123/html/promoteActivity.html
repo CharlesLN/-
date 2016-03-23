@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>发起活动</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/proActivity.css">
+</head>
+<body>
+	<span class="proTip">信息没有填写完整哦</span>
+	<div class="proHeader">
+		<a><span class="glyphicon glyphicon-arrow-left proHeaderArrow"></span></a>
+		<span class="proHeaderTitle">发起活动</span>
+		<span class="proHeaderView">预览</span>
+	</div>
+	<div class="warp">
+		<div class="proInfo">
+			<span>基本信息</span>
+			<ul>
+				<li class="proInfoName">
+					<span>名称</span>
+					<input type="text">
+				</li>
+				<hr>
+				<li class="proInfoStart">
+					<span>主办</span>
+					<input class="proInfoStartInput" type="text" readonly>
+					<i class="glyphicon glyphicon-menu-down"></i>
+					<!-- 该用户管理或作为会长的社团 -->
+					<ul class="proInfoStartUl">
+						<li>创业协会</li>
+						<li>创业协会</li>
+						<li>创业协会</li>
+						<li>创业协会</li>
+						<li>创业协会</li>
+					</ul>
+				</li>
+				<hr>
+				<li>
+					<span>开始</span>
+					<input type="text" placeholder="请选择" id="beginTime" readonly>
+					<i class="glyphicon glyphicon-menu-down"></i>
+				</li>
+				<hr>
+				<li>
+					<span>结束</span>
+					<input type="text" placeholder="请选择" id="endTime" readonly>
+					<i class="glyphicon glyphicon-menu-down"></i>
+				</li>
+				<hr>
+				<li class="proInfoLocation">
+					<span>地点</span>
+					<input type="text">
+				</li>
+				<hr>
+				<li class="proInfoScale">
+					<span>范围</span>
+					<input type="text" value="同校" readonly>
+					<i class="glyphicon glyphicon-menu-down"></i>
+					<ul class="proInfoScaleUl">
+						<li>同校</li>
+						<li>无限制</li>
+					</ul>
+				</li>
+				<hr>
+				<li id="proInfoClassify">
+					<span>类别</span>
+					<input type="text" value="明星颜值" readonly>
+					<i class="glyphicon glyphicon-menu-down"></i>
+					<ul id="proInfoClassifyUl">
+						<li>明星颜值</li>
+						<li>语文哲史</li>
+						<li>法律心理</li>
+						<li>运动旅行</li>
+						<li>养生医学</li>
+						<li>影视动漫</li>
+						<li>棋牌军游</li>
+						<li>歌舞戏剧</li>
+						<li>软硬开发</li>
+						<li>艺术设计</li>
+						<li>学术竞赛</li>
+						<li>逻辑口才</li>
+						<li>经济金融</li>
+						<li>公益服务</li>
+						<li>创业求职</li>
+						<li>天文地理</li>
+						<li>其他特质</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="proDetails">
+			<span>活动详情</span>
+			<textarea id="proArea-1" placeholder="流程..."></textarea>
+			<textarea id="proArea-2" placeholder="意义..."></textarea>
+			<textarea id="proArea-3" placeholder="备注..."></textarea>
+			<textarea id="proArea-4" placeholder="报名特殊要求..."></textarea>
+			<div class="proDetailsTip">
+				<span class="glyphicon glyphicon-question-sign"></span>
+				<span id="special">什么是特殊要求?</span>
+			</div>
+			<p id="info">用户报名时，平台除默认要求(姓名、电话、QQ)外，还将提供一个备注输入框，
+				如有其他报名信息要求，请注明，我们将对用户进行提醒。</p>
+		</div>
+		<div class="proAddPic">
+			<span>添加图片</span>
+			<div class="proAddpicClear">
+				<div class="proUpload">
+					<!-- <input type="button" value="读取图像" onclick="readAsDataURL()" style="margin-top:30px;"/> -->
+					<span class="glyphicon glyphicon-open"></span>
+					<span>本地上传</span>
+					<input type="file" id="file" accept="image/*" class="upload">
+					<!-- onchange="readAsDataURL()" -->
+					<!-- <div id="result" name="result"></div>   -->
+				</div>
+				<div class="proOnline">
+					<span class="glyphicon glyphicon-picture"></span>
+					<span>在线图库</span>
+				</div>
+			</div>
+			<hr>
+			<div class="proPic">
+				<div class="proPicDiv">
+					<span class="glyphicon glyphicon-remove"></span>
+					<img src="../img/bg1.png" alt="">
+				</div>
+				<div class="proPicDiv">
+					<span class="glyphicon glyphicon-remove"></span>
+					<img src="../img/bg1.png" alt="">
+				</div>
+				<div class="proPicDiv">
+					<span class="glyphicon glyphicon-remove"></span>
+					<img src="../img/bg1.png" alt="">
+				</div>
+				<div class="proPicDiv">
+					<span class="glyphicon glyphicon-remove"></span>
+					<img src="../img/bg1.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 日历插件 -->
+	<div id="datePlugin"></div>	
+
+	<div class="footer navbar navbar-default navbar-fixed-bottom" id = "footer">
+		<ul class = "nav navbar-nav">
+			<li>
+				<img src="../img/trend.png">
+				<a href="trend.html">动态</a>
+			</li>
+			<li>
+				<img src="../img/notification.png">
+				<a href="history.html">通知</a>
+			</li>
+			<li>
+				<img src="../img/organization_active.png">
+				<a href="organization.html">社团</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- 引用外部脚本 -->
+	<script src = "../js/jQuery.js"></script>
+	<script src = "../js/date.js"></script>
+	<script src = "../js/iscroll.js"></script>
+    <script type="text/javascript">
+		$(function(){
+			$('#beginTime').date({theme:"datetime"});
+			$('#endTime').date({theme:"datetime"});
+		});
+	</script>
+    <script src = "../js/bootstrap.js"></script>
+    <script src = "../js/proActivity.js"></script>
+</body>
+</html>

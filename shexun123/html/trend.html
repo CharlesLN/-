@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>社团</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/dropdowns-enhancement.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/trend.css">
+</head>
+<body>
+	<!-- 顶部导航 -->
+	<div class = "treHeader">
+		<ul>
+			<li class = "treHeader_Left">
+				<a id = "treHeaderLeft" href="##" >看点</a>
+			</li>
+			<li class = "treHeader_Right">
+				<a id = "treHeaderRight" href="##" >我的</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="treContainer">
+		<!-- 筛选选项条 -->
+		<div class="treFilter">
+			<div class = "treTip treTab">
+				<div class="dropdown">
+					<a href="##" class="dropdown-toggle" data-toggle="dropdown" id = "treDropdown1">
+						<span>学校</span>
+						<span class = "glyphicon glyphicon-triangle-bottom"></span>
+					</a>
+					<ul class="dropdown-menu treDownMenu1">
+					    <li id = "firstline">
+					    	当前：<span>西安电子科技大学</span>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="##"><span>全部</span></a>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="##"><span>西安外国语大学</span></a>
+					    </li>
+					    <li class="divider"></li> 
+					    <li>
+					    	<a href="##"><span>西安电子科技大学</span></a>
+					    </li>
+					</ul>
+				</div>
+			</div>
+			<div class = "treTip">|</div>
+			<div class = "treTip treTab">
+				<div class="dropdown">
+					<a href="##" class="dropdown-toggle" data-toggle="dropdown" id = "treDropdown2">
+						<span>时间</span>
+						<span class = "glyphicon glyphicon-triangle-bottom"></span>
+					</a>
+					<ul class="dropdown-menu treDownMenu2">
+					    <li id = "firstline">
+					    	当前：<span>全部</span>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="##"><span>今天</span></a>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="##"><span>一周内</span></a>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="##"><span>一月内</span></a>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="##"><span>半年内</span></a>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="##"><span>半年前</span></a>
+					    </li>
+					</ul>
+				</div>
+			</div>
+			<div class = "treTip">|</div>
+			<div class = "treTip treTab">
+				<div class="dropdown">
+					<a href="##" class="dropdown-toggle" data-toggle="dropdown" id = "treDropdown3" data-placeholder="false">
+						<span>类型</span>
+						<span class = "glyphicon glyphicon-triangle-bottom"></span>
+					</a>
+					<!-- 更改为单选 -->
+					<ul class="dropdown-menu treDownMenu3">
+					    <li id = "firstline">
+					    	当前：<span>全部</span>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<!-- <input type="checkbox" id="practice" value="实践"> -->
+					    	<!-- <label for="practice"><span>实践</span></label> -->
+					    	<a href="##"><span>实践</span></a>
+					    </li>
+					    <li class="divider"></li>
+					    <li>
+					    	<a href="##"><span>竞赛</span></a>
+					    </li>
+					     <li class="divider"></li>
+					    <li>
+					    	<a href="##"><span>娱乐</span></a>
+					    </li>
+					     <li class="divider"></li>
+					    <li>
+					    	<a href="##"><span>学习</span></a>
+					    </li>
+					     <li class="divider"></li>
+					    <li>
+					    	<a href="##"><span>讲座</span></a>
+					    </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 轮播图 -->
+		<div id="treCarousel" class="carousel slide" data-ride="carousel">
+		  	<!-- Indicators -->
+		  	<ol class="carousel-indicators" id = "treIndicators">
+		    	<li data-target="#treCarousel" data-slide-to="0" class="active"></li>
+		    	<li data-target="#treCarousel" data-slide-to="1"></li>
+		    	<li data-target="#treCarousel" data-slide-to="2"></li>
+		    	<li data-target="#treCarousel" data-slide-to="3"></li>
+		 	 </ol>
+		  	<!-- Wrapper for slides -->
+		  	<div class="carousel-inner" role="listbox">
+		    	<div class="item active">
+		      		<img id = "treCarouselPhoto" src="../img/bg1.png" alt="">
+		      		<div class="carousel-caption" id = "treCarouselCaption">
+		      			<p>全国十佳社团比赛圆满完成</p>
+		      		</div>
+		    	</div>
+		    	<div class="item">
+		    		<img id = "treCarouselPhoto" src="../img/bg1.png" alt="">
+		      		<div class="carousel-caption" id = "treCarouselCaption">
+		      			<p>十佳社团</p>
+		      		</div>
+		    	</div>
+		     	<div class="item">
+		      		<img id = "treCarouselPhoto" src="../img/bg1.png" alt="">
+		      		<div class="carousel-caption" id = "treCarouselCaption">
+		      			<p>比赛圆满</p>
+		      		</div>
+		    	</div>
+		    	<div class="item">
+		      		<img id = "treCarouselPhoto" src="../img/bg1.png" alt="">
+		      		<div class="carousel-caption" id = "treCarouselCaption">
+		      			<p>圆满成功</p>
+		      		</div>
+		    	</div>
+		  	</div>
+		</div>
+		<!-- 内容主体 -->
+		<div class="treMain">
+			<div class = "treMainWarp">
+				<img src="../img/bg1.png" alt="" class="treMainImg">
+				<div class="treMainContent">
+					<!-- 跳转到活动详情页面 -->
+					<a href = "##" class = "treMainTitle">社讯杯篮球比赛开赛</a>
+				</div>
+				<!-- 跳转到社团详情 -->
+				<a href = "##" class = "treMainInfoName">创业创新协会</a>
+				<span class = "treMainInfoTime">
+					<span>3</span>
+					<span>分钟前</span>
+				</span>
+				<span class = "treMainInfoNum">
+					<span class = "glyphicon glyphicon-eye-open"></span>
+					<span>34</span> 
+				</span>
+			</div>
+			<hr>
+			<div class = "treMainWarp">
+				<img src="../img/bg1.png" alt="" class="treMainImg">
+				<div class="treMainContent">
+					<a href = "##" class = "treMainTitle">通信工程学院“寻找夜空中最闪亮的星”十佳学长评选</a>
+				</div>
+				<a href = "##" class = "treMainInfoName">通信工程学院团委</a>
+				<span class = "treMainInfoTime">
+					<span>4</span>
+					<span>小时前</span>
+				</span>
+				<span class = "treMainInfoNum">
+					<span class = "glyphicon glyphicon-eye-open"></span>
+					<span>34</span> 
+				</span>
+			</div>
+			<hr>
+			<div class = "treMainWarp">
+				<img src="../img/bg1.png" alt="" class="treMainImg">
+				<div class="treMainContent">
+					<a href = "##" class = "treMainTitle">社讯杯篮球比赛结果公布</a>
+				</div>
+				<a  href = "##" class = "treMainInfoName">创业创新协会</a>
+				<span class = "treMainInfoTime">
+					<span>11月12日</span>
+				</span>
+				<span class = "treMainInfoNum">
+					<span class = "glyphicon glyphicon-eye-open"></span>
+					<span>34</span> 
+				</span>
+			</div>
+			<hr>
+		</div>
+	</div>
+	
+	<!-- 底部导航栏 -->
+	<div class="footer navbar navbar-default navbar-fixed-bottom" id = "footer">
+		<ul class = "nav navbar-nav">
+			<li>
+				<img src="../img/trend_active.png">
+				<a href="trend.html">动态</a>
+			</li>
+			<li>
+				<img src="../img/notification.png">
+				<a href="history.html">通知</a>
+			</li>
+			<li>
+				<img src="../img/organization.png">
+				<a href="organization.html">社团</a>
+			</li>
+		</ul>
+	</div>
+
+    <script src = "../js/jQuery.js"></script>
+    <script src = "../js/bootstrap.js"></script>
+    <script src = "../js/touch.js"></script>
+    <script src = "../js/dropdowns-enhancement.js"></script>
+    <script src = "../js/trend.js"></script>
+</body>
+</html>

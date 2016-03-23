@@ -1,0 +1,263 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+	font-size: 10px;
+}
+body{
+	height: 100%;
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+	background: #f5f5f5;
+}
+@font-face {font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.leftArrow{
+	color: #32CD32;
+	font-size: 2rem;
+	margin: 1rem 2rem;
+}
+/*成功提示框*/
+.toast{
+	width: 100%;
+	display: none;
+}
+.mask{
+	position: absolute;
+	z-index: 9999;
+	width: 100%;
+	height: 120%;
+	background: rgba(0,0,0,0.3);
+}
+.info{
+	position: fixed;
+	width: 90%;
+	z-index: 9999;
+	text-align: center;
+	height: 6rem;
+	background: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	top: 40%;
+	left: 5%;
+	box-shadow: 5px 5px 3px #a2a2a2;
+}
+.info p{
+	width: 80%;
+	height: 6rem;
+	text-align: left;
+	font-size: 1.5rem;
+	margin-left: 20%;
+	margin-top: 1rem;
+	word-break:break-all;
+	work-warp:break-word;
+}
+.info img{
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+}
+.iknow{
+	display: block;
+	width: 100%;
+	border: 0;
+	background: #32CD32;
+	color: #fff;
+	height: 30px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-top: -2rem;
+	box-shadow: 5px 5px 3px #a2a2a2;
+}
+/*标题*/
+.head1,.head2{
+	color: #32CD32;
+	text-align: center;
+}
+.head1{
+	font-size: 3rem;
+	font-weight: bold;
+}
+.head2{
+	font-size: 1.75rem;
+}
+.container{
+	width: 100%;
+	background: #fff;
+	margin-top: 2rem;
+}
+.container div{
+	position: relative;
+}
+.container input{
+	border: 0;
+	height: 3.5rem;
+	width: 100%;
+	line-height: 3.5rem;
+	padding-left: 8rem;
+}
+.container span{
+	position: absolute;
+	color: #a3a3a3;
+	top: 0.8rem;
+	left: 2rem;
+}
+.container i{
+	position: absolute;
+	color: #a3a3a3;
+	z-index: 10;
+	top:0.5rem;
+}
+.sex{
+	display:block;
+	height:3.5rem;
+
+}
+.sex input{
+	width: 20px;
+	height: 20px;
+	opacity: 0;
+}
+#female{
+	left: 8rem;
+	color: #a3a3a3;
+}
+#male{
+	left: 12rem;
+}
+.school{
+	height: 3.5rem;
+}
+.option{
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	left: 5rem;
+	width: 80%;
+	border: 1px solid #a3a3a3;
+	background: rgba(0,0,0,0.7);
+	border-radius: 5px;
+}
+hr{
+	margin: 0;
+}
+.option ul{
+	margin-bottom: 0;
+	max-height: 15rem;
+	overflow: auto;
+}
+.option li{
+	list-style: none;
+	text-align: center;
+	color: #fff;
+	height: 4rem;
+	line-height: 4rem;
+}
+#mailInput{
+	width: 100%;
+	padding-right: 8rem;
+}
+.mail{
+	position: absolute;
+	z-index: 10;
+	top: 0.6rem;
+	right: 1rem;
+	color: #a3a3a3;
+}
+.eye{
+	margin-top: 0.2rem;
+	margin-left: 80%;
+}
+.get,.register{
+	border: 1px solid #32CD32;
+	border-radius: 5px;
+	background: transparent;
+}
+.get{
+	width: 5rem;
+	height: 2.5rem;
+	border-radius: 5px;
+	position: absolute;
+	top: 0.5rem;
+	right: 1rem;
+}
+.register{
+	display: block;
+	width: 80%;
+	height: 3rem;
+	margin: 4rem auto;
+}
+/*表单提示信息*/
+.tip{
+	position: absolute;
+	z-index: 999;
+	padding: 0.5rem;
+	color: #fff;
+	background: rgba(0,0,0,0.7);
+	border-radius: 5px;
+	left: 8rem;
+	top: 3.7rem;
+}
+.tip:before{
+	position: absolute;
+	z-index: 999;
+	border: solid transparent;
+	content: ' ';
+	width: 0;
+	height: 0;
+	left: 10%;
+	border-width: 10px;
+	border-bottom-color: rgba(0,0,0,0.7);
+	top: -1.7rem;
+}
+/*资料不完善的注册按钮弹出层*/
+.tip2{
+	/*display: none;*/
+	position: absolute;
+	z-index: 999;
+	padding: 4rem;
+	color: #fff;
+	background: rgba(0,0,0,0.7);
+/*	border: 1px solid #a3a3a3;*/
+	border-radius: 5px;
+	left: 50%;
+	margin-left: -10rem;
+	top: 20rem;
+}
+/*未查到学校*/
+.tip3{
+	position: absolute;
+	z-index: 999;
+	padding: 2rem;
+	color: #fff;
+	background: rgba(0,0,0,0.7);
+	border-radius: 5px;
+	left: 1rem;
+	top: 1rem;
+}
+.tip3:before{
+	position: absolute;
+	z-index: 999;
+	border: solid transparent;
+	content: ' ';
+	width: 0;
+	height: 0;
+	left: 10%;
+	border-width: 10px;
+	border-bottom-color: rgba(0,0,0,0.7);
+	top: -1.7rem;
+}
